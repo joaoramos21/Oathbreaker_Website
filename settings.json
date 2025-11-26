@@ -1,0 +1,14 @@
+{
+  "mustache.compiler": {
+    "siteUrl": "D:/Projetos/github-copilot/output/",
+    "output": "output",
+    "templates": "templates/pages",
+    "layouts": "templates/layouts",
+    "assets": "assets",
+    "partials": "templates/partials",
+    "cleanOutput": true ,
+    "createDirectories": true,
+    "validateOutput": true,
+    "copyAssets": true
+  }
+}
