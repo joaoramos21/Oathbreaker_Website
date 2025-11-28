@@ -1,0 +1,18 @@
+{
+    "remotePath": "/htdocs",
+    "host": "ftpupload.net",
+    "context": "output",
+    "username": "if0_40527385",
+    "password": "Catloverramos21",
+    "port": 21,
+    "protocol": "ftp",
+    "secure": false,
+    "passive": true,
+    "uploadOnSave": true,
+    "debug": true,
+    "ignore": [
+        ".vscode",
+        ".git",
+        ".DS_Store"
+    ]
+}
