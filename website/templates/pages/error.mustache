@@ -1,0 +1,18 @@
+{{< layout}}
+{{$main}}
+{{$content}}
+<!-- Error Content -->
+<div class="error-container">
+    <div class="error-background"></div>
+    <div class="error-portal"></div>
+    <div class="error-content">
+        <h1 class="error-code">{{errorCode}}</h1>
+        <h2 class="error-title">{{errorTitle}}</h2>
+        <div class="divider"></div>
+        <p class="error-message">{{errorMessage}}</p>
+        <a href="{{returnLink}}" class="return-button">{{returnText}}</a>
+    </div>
+</div>
+{{/content}}
+{{/main}}
+{{/layout}}

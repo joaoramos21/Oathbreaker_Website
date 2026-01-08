@@ -1,0 +1,25 @@
+<footer>
+    <div class="footer-content">
+        <div class="footer-divider"></div>
+
+        <nav class="footer-nav">
+            {{#primaryLinks}}
+            <a href="{{url}}">{{label}}</a>
+            {{/primaryLinks}}
+        </nav>
+
+        <div class="footer-divider-small"></div>
+
+        <nav class="footer-nav">
+            {{#secondaryLinks}}
+            <a href="{{url}}">{{label}}</a>
+            {{/secondaryLinks}}
+        </nav>
+
+        <div class="footer-divider-small"></div>
+
+        <div class="footer-copyright">
+            <p>{{copyright}}</p>
+        </div>
+    </div>
+</footer>

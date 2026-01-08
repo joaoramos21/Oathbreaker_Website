@@ -1,0 +1,25 @@
+{
+  "lang": "en",
+  "siteName": "OATHBREAKER",
+  "copyright": "© 2025 OathBreaker | A World of Shadow and Legend",
+  "ctaText": "ENTER THE REALM",
+  "ctaLink": "error.html",
+  "navLinks": [
+    { "label": "REALM", "url": "index.html#realm" },
+    { "label": "ARSENAL", "url": "index.html#arsenal" },
+    { "label": "LORE", "url": "index.html#world" },
+    { "label": "About", "url": "index.html" },
+    { "label": "SUPPORT", "url": "support.html" },
+    { "label": "UPDATES", "url": "updates.html" }
+  ],
+  "primaryLinks": [
+    { "label": "REALM", "url": "index.html#realm" },
+    { "label": "ARSENAL", "url": "index.html#arsenal" },
+    { "label": "LORE", "url": "index.html#world" }
+  ],
+  "secondaryLinks": [
+    { "label": "About", "url": "index.html" },
+    { "label": "SUPPORT", "url": "support.html" },
+    { "label": "UPDATES", "url": "updates.html" }
+  ]
+}

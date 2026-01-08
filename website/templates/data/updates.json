@@ -1,0 +1,43 @@
+{
+  "lang": "en",
+  "pageTitle": "Updates & Patch Notes - OATHBREAKER",
+  
+  "pageHeading": "Updates & Patch Notes",
+  "searchPlaceholder": "Search...",
+  "patchNotes": [
+    {
+      "title": "Version 1.1 - Day one patch",
+      "date": "20 october",
+      "version": "v 1.1.0",
+      "isLatest": true,
+      "sections": [
+        {
+          "title": "Bugfixes",
+          "isRelease": false,
+          "items": [
+            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 1.0 - Genesis",
+      "date": "17 october",
+      "version": "v 1.0.0",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "Initial Release",
+          "isRelease": true,
+          "items": [
+            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet."
+          ]
+        }
+      ]
+    }
+  ]
+}

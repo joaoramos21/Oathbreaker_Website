@@ -1,0 +1,162 @@
+{{<layout}}
+{{$main}}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{hero.title}}</h1>
+        <p>{{hero.subtitle}}</p>
+        <a href="{{hero.ctaLink}}" class="cta-button">{{hero.ctaText}}</a>
+    </div>
+</section>
+
+<!-- News of the Realm Section -->
+<section id="realm">
+    <div class="section-container">
+        <h2 class="section-title">{{newsSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{newsSection.subtitle}}</p>
+
+        <div class="news-grid">
+            <div class="news-image">
+                <img src="{{newsSection.image}}" alt="{{newsSection.imageAlt}}">
+            </div>
+            <div class="news-content">
+                {{#newsSection.items}}
+                <div class="news-item">
+                    <h3>{{title}}{{#date}} <span class="news-date">{{date}}</span>{{/date}}</h3>
+                    <p>{{content}}</p>
+                </div>
+                {{/newsSection.items}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Arsenal Section -->
+<section id="arsenal">
+    <div class="section-container">
+        <h2 class="section-title">{{arsenalSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{arsenalSection.subtitle}}</p>
+    </div>
+</section>
+
+<!-- Vessels Section -->
+<section id="lore">
+    <div class="section-container">
+        <h2 class="section-title">{{vesselsSection.title}}</h2>
+        <div class="dividers">
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="divider"></div>
+        </div>
+        <p class="subtitle">{{vesselsSection.subtitle}}</p>
+
+        <div class="vessel-grid">
+            {{#vesselsSection.vessel_1}}
+            <div class="vessel-item{{#reverse}} reverse{{/reverse}}">
+                <div class="vessel-image">
+                    <img src="{{image}}" alt="{{name}}">
+                </div>
+                <div class="vessel-content">
+                    <h3>{{name}}</h3>
+                    <p><strong>{{loreLabel}}:</strong> {{lore}}</p>
+                    <p class="description">{{description}}</p>
+                </div>
+            </div>
+            {{/vesselsSection.vessel_1}}
+            {{#vesselsSection.vessel_2}}
+            <div class="vessel-item{{#reverse}} reverse{{/reverse}}">
+                <div class="vessel-image">
+                    <img src="{{image}}" alt="{{name}}">
+                </div>
+                <div class="vessel-content">
+                    <h3>{{name}}</h3>
+                    <p><strong>{{loreLabel}}:</strong> {{lore}}</p>
+                    <p class="description">{{description}}</p>
+                </div>
+            </div>
+            {{/vesselsSection.vessel_2}}
+            {{#vesselsSection.vessel_3}}
+            <div class="vessel-item{{#reverse}} reverse{{/reverse}}">
+                <div class="vessel-image">
+                    <img src="{{image}}" alt="{{name}}">
+                </div>
+                <div class="vessel-content">
+                    <h3>{{name}}</h3>
+                    <p><strong>{{loreLabel}}:</strong> {{lore}}</p>
+                    <p class="description">{{description}}</p>
+                </div>
+            </div>
+            {{/vesselsSection.vessel_3}}
+        </div>
+
+        <!-- Weapon Card -->
+        <div class="weapon-card">
+            <img src="{{weaponCard.image}}" alt="{{weaponCard.name}}" class="weapon-image">
+            <h3 class="weapon-name">{{weaponCard.name}}</h3>
+            <div class="stats">
+                {{#weaponCard.stats}}
+                <div class="stat">
+                    <div class="stat-label">{{label}}</div>
+                    <div class="stat-value">{{value}}</div>
+                </div>
+                {{/weaponCard.stats}}
+            </div>
+            <p class="weapon-description">{{weaponCard.description}}</p>
+            <div class="arrow-buttons">
+                <button class="arrow-button">←</button>
+                <button class="arrow-button">→</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- World Section -->
+<section id="world">
+    <div class="section-container">
+        <h2 class="section-title">{{worldSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{worldSection.subtitle}}</p>
+
+        <div class="world-box">
+            <div class="world-text">
+                {{#worldSection.paragraphs}}
+                <p>{{.}}</p>
+                {{/worldSection.paragraphs}}
+            </div>
+        </div>
+
+        <a href="{{worldSection.ctaLink}}" class="world-button">{{worldSection.ctaText}}</a>
+    </div>
+</section>
+
+<!-- Community Section -->
+<section id="community">
+    <div class="section-container">
+        <h2 class="section-title">{{communitySection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{communitySection.subtitle}}</p>
+
+        <div class="community-grid">
+            <div class="community-text">
+                {{#communitySection.paragraphs}}
+                <p>{{.}}</p>
+                {{/communitySection.paragraphs}}
+
+                <div class="social-icons">
+                    {{#communitySection.socialLinks}}
+                    <a href="{{url}}" class="social-icon{{#isYoutube}} youtube{{/isYoutube}}">
+                        <img src="{{icon}}" alt="{{label}}">
+                    </a>
+                    {{/communitySection.socialLinks}}
+                </div>
+            </div>
+            <div class="community-image">
+                <img src="{{communitySection.image}}" alt="{{communitySection.imageAlt}}">
+            </div>
+        </div>
+    </div>
+</section>
+{{/main}}
+{{/layout}}

@@ -1,0 +1,103 @@
+{
+  "lang": "en",
+  "pageTitle": "A World of Shadows and Legends - OATHBREAKER",
+  "hasScrollBehavior": true,
+  "hasImages": true,
+  "hero": {
+    "title": "OATHBREAKER",
+    "subtitle": "A World of Shadows and Legends",
+    "ctaText": "ENTER THE REALM",
+    "ctaLink": "error.html"
+  },
+   "newsSection": {
+    "title": "News of the realm",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "image": "assets/images/Images-Misc/town-crier.jpg",
+    "imageAlt": "Town Crier",
+    "items": [
+      {
+        "title": "Welcome to the realm",
+        "content": "\"Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet\"."
+      },
+      {
+        "title": "Patch 1.1.0",
+        "date": "20 october",
+        "content": "\"Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet\"."
+      },
+      {
+        "title": "Patch 1.0.0",
+        "date": "17 october",
+        "content": "\"Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet\"."
+      }
+    ]
+  },
+  "arsenalSection": {
+    "title": "The Arsenal",
+    "subtitle": "Lorem ipsum dolor sit amet"
+  },
+  "vesselsSection": {
+    "title": "The Vessels of Power",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "vessel_1": [
+      {
+        "name": "Void Preacher",
+        "lore": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+        "image": "assets/images/Images-Misc/town-crier.jpg",
+        "imageAlt": "Void Preacher"
+      }
+    ],
+    "vessel_2": [
+      {
+        "name": "Void Preacher",
+        "lore": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+        "image": "assets/images/Images-Misc/town-crier.jpg",
+        "imageAlt": "Void Preacher"
+      }
+    ],
+    "vessel_3": [
+      {
+        "name": "Void Preacher",
+        "lore": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
+        "image": "assets/images/Images-Misc/town-crier.jpg",
+        "imageAlt": "Void Preacher"
+      }
+    ]
+  },
+  "weaponCard": {
+    "name": "Sword of Legends",
+    "image": "assets/images/Images-Misc/town-crier.jpg",
+    "stats": [{ "label": "Damage", "value": "99" }, { "label": "Speed", "value": "85" }],
+    "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet."
+  },
+  "worldSection": {
+    "title": "The World",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    ],
+    "ctaText": "EXPLORE THE REALM",
+    "ctaLink": "error.html"
+  },
+  "communitySection": {
+    "title": "Join the Community",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ],
+    "socialLinks": [
+      {
+        "label": "YouTube",
+        "url": "https://youtube.com",
+        "icon": "assets/images/Icons/youtube.svg",
+        "isYoutube": true
+      }
+    ],
+    "image": "assets/images/Images-Misc/town-crier.jpg",
+    "imageAlt": "Community"
+  }
+}

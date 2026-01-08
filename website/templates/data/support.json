@@ -1,0 +1,61 @@
+{
+  "lang": "en",
+  "pageTitle": "Technical Support & Contact - OATHBREAKER",
+  "hasInputs": true,
+ 
+  "pageHeading": "Technical Support & Contact",
+  "contactCards": [
+    {
+      "title": "Get in Touch",
+      "items": [
+        { "label": "Email Support", "value": "support@oathbreaker.com", "isLink": false },
+        { "label": "Phone", "value": "(+351) 92X XXX XXX", "isLink": false },
+        { "label": "Response Time", "value": "Within 48 hours", "isLink": false }
+      ]
+    },
+    {
+      "title": "Support",
+      "items": [
+        { "label": "F.A.Q", "value": "https://faq.oathbreaker.com", "isLink": true },
+        { "label": "Help Documentation", "value": "https://docs.oathbreaker.com", "isLink": true },
+        { "label": "Community Discord", "value": "https://discord.gg/oathbreaker", "isLink": true }
+      ]
+    }
+  ],
+  "formTitle": "Send us a Message",
+  "formFields": [
+    {
+      "label": "Username",
+      "type": "text",
+      "placeholder": "Insert Username...",
+      "required": true,
+      "isInput": true
+    },
+    {
+      "label": "Email",
+      "type": "email",
+      "placeholder": "Insert Email...",
+      "required": true,
+      "isInput": true
+    },
+    {
+      "label": "Issue Category",
+      "placeholder": "Select a category",
+      "required": true,
+      "isSelect": true,
+      "options": [
+        { "value": "technical", "label": "Technical Issue" },
+        { "value": "account", "label": "Account Help" },
+        { "value": "gameplay", "label": "Gameplay Question" },
+        { "value": "other", "label": "Other" }
+      ]
+    },
+    {
+      "label": "Message",
+      "placeholder": "Insert Message...",
+      "required": true,
+      "isTextarea": true
+    }
+  ],
+  "submitText": "Send Message"
+}

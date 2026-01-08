@@ -1,0 +1,49 @@
+{{< layout}}
+{{$main}}
+{{$content}}
+<!-- Main Content -->
+<main>
+    <h1 class="page-title">{{pageHeading}}</h1>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="{{searchPlaceholder}}">
+        <button class="search-button">🔍</button>
+    </div>
+
+    <div class="patch-notes">
+        {{#patchNotes}}
+        <div class="patch-item">
+            <div class="patch-content">
+                <div class="patch-header">
+                    <h2 class="patch-title">{{title}}</h2>
+                    <span class="patch-date">{{date}}</span>
+                </div>
+                <div class="patch-divider"></div>
+                <div class="patch-badges">
+                    <div class="badge version">{{version}}</div>
+                    {{#isLatest}}
+                    <div class="badge latest">latest</div>
+                    {{/isLatest}}
+                </div>
+                {{#sections}}
+                <h3 class="patch-section-title{{#isRelease}} release{{/isRelease}}">{{title}}</h3>
+                <ul class="patch-list">
+                    {{#items}}
+                    <li>{{.}}</li>
+                    {{/items}}
+                </ul>
+                {{/sections}}
+            </div>
+        </div>
+        {{/patchNotes}}
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button>←</button>
+        <button>→</button>
+    </div>
+</main>
+{{/content}}
+{{/main}}
+{{/layout}}

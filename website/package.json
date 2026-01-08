@@ -1,0 +1,16 @@
+{
+  "name": "oathbreaker-mustache",
+  "version": "1.0.0",
+  "description": "OATHBREAKER website built with Mustache.js templates",
+  "main": "compile.js",
+  "scripts": {
+    "build": "node compile.js",
+    "dev": "node compile.js"
+  },
+  "keywords": ["mustache", "static-site-generator", "templating"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}
