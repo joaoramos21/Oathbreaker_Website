@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tome of Knowledge - OATHBREAKER</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.min.css?v=20260118b">
+    
+    <style>
+    .hero::before {
+        background-image: url('assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png');
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="menu-overlay" id="menu-overlay"></div>
+        <div class="header-content">
+            <a href="index.html" class="logo">OATHBREAKER</a>
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="nav-menu">
+                <a href="error.html" class="header-button mobile-cta">ENTER THE REALM</a>
+                <a href="index.html#realm">REALM</a>
+                <a href="index.html#arsenal">ARSENAL</a>
+                <a href="index.html#world">LORE</a>
+                <a href="about.html">About</a>
+                <a href="support.html">SUPPORT</a>
+                <a href="updates.html">UPDATES</a>
+            </nav>
+            
+            <a href="error.html" class="header-button desktop-cta">ENTER THE REALM</a>
+        </div>
+    </header>
+    
+    <main>
+        
+<!-- Hero Section -->
+<section class="hero hero-small has-video">
+    <div class="hero-video-container" id="hero-video-container">
+        <div class="hero-video-wrapper">
+            <video id="hero-video-player" autoplay muted loop playsinline disablepictureinpicture>
+                <source src="assets/images/Hero-banner/hero-banner.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-video-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <h1>Tome of Knowledge</h1>
+        <p>Ancient Wisdom for Wandering Souls</p>
+    </div>
+</section>
+
+<!-- Tome of Knowledge Content -->
+<section id="tome-content">
+    <div class="section-container">
+        <!-- Back to Support -->
+        <div class="back-navigation">
+            <a href="support.html" class="back-link">
+                <span class="back-arrow">←</span>
+                <span>Return to the Hall of Aid</span>
+            </a>
+        </div>
+
+        <!-- Introduction -->
+        <div class="tome-intro">
+            <p class="tome-intro-text">Within these sacred pages lie the answers sought by countless travelers before you. Consult the wisdom gathered by our scribes, and may your path through the realm be illuminated.</p>
+        </div>
+
+        <!-- FAQ Categories -->
+        <div class="tome-categories">
+            <div class="tome-category">
+                <h2 class="category-title">
+                    <span class="category-icon">⚔️</span>
+                    The Art of Combat
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="questions-list">
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I master the ancient weapon arts?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Each weapon class possesses unique combat techniques passed down through generations. Visit the Arsenal section to study the different fighting styles. Practice in the training grounds before venturing into the wilds, and remember—timing and positioning are the true marks of a warrior.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">Why does my blade seem to falter against certain foes?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Different creatures possess varying resistances to weapon types. Spectral beings may be immune to mundane steel, while armored foes require blunt force or piercing strikes. Consult the bestiary and adapt your arsenal accordingly.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I unlock legendary weapon techniques?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Legendary techniques are earned through trials of valor. Complete the ancient challenges scattered throughout the realm, defeat formidable guardians, and prove your worth. Some techniques are also taught by hidden masters dwelling in remote locations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tome-category">
+                <h2 class="category-title">
+                    <span class="category-icon">🛡️</span>
+                    Realm Navigation & Exploration
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="questions-list">
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">I find myself lost in the Shadowmere. How do I escape?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>The Shadowmere is a treacherous region where conventional navigation fails. Seek the glowing wisps that mark safe passages, and avoid the crimson mists at all costs. If truly lost, use a Wayfinder's Stone to return to the last sanctuary you visited.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I unlock sealed gates and ancient doors?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Many gates require specific keys, runes, or completed quests to open. Examine nearby inscriptions for clues, speak with local inhabitants, and explore thoroughly. Some doors only reveal themselves during certain moon phases or after defeating nearby guardians.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">Where can I find safe havens to rest and recover?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Sanctuaries are marked by golden braziers and the symbol of the Oathkeepers. Major settlements, hidden shrines, and ancient waypoints all provide respite. Resting at these locations will restore your vitality and allow you to commune with distant allies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tome-category">
+                <h2 class="category-title">
+                    <span class="category-icon">📜</span>
+                    Account & Chronicle Matters
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="questions-list">
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I recover my lost chronicle (account)?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>If you've lost access to your chronicle, seek the Archivists through our support channels. Provide the email bound to your account and any identifying information. The Archivists will verify your identity and restore your access within 48 hours.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">Can I transfer my progress to another realm (platform)?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Cross-realm transfers are possible through the Chronicle Binding ritual. Navigate to your account settings, select 'Bind Chronicles,' and follow the sacred protocols. Note that some realm-specific achievements may not transfer.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I change my warrior's name or appearance?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Visit the Mirror of Reflection in any major settlement. For a modest offering of gold, you may alter your appearance. Name changes require a Scroll of Identity, obtainable through the in-game shop or special events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tome-category">
+                <h2 class="category-title">
+                    <span class="category-icon">⚙️</span>
+                    Technical Enchantments
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="questions-list">
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">The realm appears distorted or moves erratically. What sorcery is this?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Visual disturbances often stem from outdated enchantments (graphics drivers) or insufficient magical reserves (system resources). Ensure your scrying device meets the minimum requirements, update your visual enchantments, and try lowering the graphical fidelity in the settings menu.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">I cannot connect to the realm servers. Am I banished?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Fear not, traveler—this is rarely banishment. Check if maintenance rituals are scheduled on our announcements page. Verify your connection to the Aethernet (internet), and ensure no protective wards (firewalls) are blocking the connection. If issues persist, contact our support scribes.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I report a glitch in the fabric of reality?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Anomalies in the realm should be reported immediately. Use the in-game reporting tool (press F12) or submit a detailed account through our support page. Include where the anomaly occurred, what actions triggered it, and any visual evidence you can capture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tome-category">
+                <h2 class="category-title">
+                    <span class="category-icon">🤝</span>
+                    Guilds & Fellowship
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="questions-list">
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I form or join a guild?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>To form a guild, gather five like-minded warriors and visit the Guild Registrar in any capital city. Pay the founding fee and choose your banner. To join an existing guild, seek out guild recruiters or use the Guild Finder in the social menu.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">What benefits does guild membership provide?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Guild members gain access to shared resources, exclusive quests, guild halls, and coordinated raid opportunities. Higher-ranked members can unlock special titles, cosmetic rewards, and the ability to participate in inter-guild tournaments.</p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">How do I communicate with distant allies?</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>Use the Whisperstone system to send private messages to allies regardless of location. Join voice channels through the party menu for real-time coordination. Guild members also have access to dedicated guild channels and announcement systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Still Need Help -->
+        <div class="tome-footer">
+            <div class="tome-footer-content">
+                <h3>Wisdom Not Found?</h3>
+                <p>If the answers you seek elude these pages, our dedicated scribes stand ready to assist. Send word through the Hall of Aid, and guidance shall find you.</p>
+                <a href="support.html" class="cta-button">Seek the Scribes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+
+            <nav class="footer-nav">
+                <a href="index.html#realm">REALM</a>
+                <a href="index.html#arsenal">ARSENAL</a>
+                <a href="index.html#world">LORE</a>
+            </nav>
+
+            <div class="footer-divider-small"></div>
+
+            <nav class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="support.html">SUPPORT</a>
+                <a href="updates.html">UPDATES</a>
+            </nav>
+
+            <div class="footer-divider-small"></div>
+
+            <div class="footer-copyright">
+                <p>© 2025 OathBreaker | A World of Shadow and Legend</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js" integrity="sha512-XJ4QZR4O9YMMGT8UB0vO64YZb6nIKT9lqx4dLKvJwsDbNBNz8P/WHBHPpU3dW7RVp/Nj/2XqL0C+8Q1sXhBt5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Hero Video Background -->
+    <script src="assets/js/hero-video.js"></script>
+    
+      
+</body>
+</html>

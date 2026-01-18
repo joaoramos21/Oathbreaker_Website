@@ -2,211 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Path not found - OATHBREAKER - OATHBREAKER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>404 - Path not found - OATHBREAKER</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
-    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.min.css?v=20260118b">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
-        body {
-            font-family: 'Inter', -apple-system, Roboto, sans-serif;
-            background: linear-gradient(234deg, #191B35 25.23%, #12142C 50.45%);
-            color: #EBEBEB;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-
-
-        /* Header */
-        header {
-            width: 100%;
-            background-color: #090B18;
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-
-        header::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 3.15px;
-            background-color: #2E2A28;
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 1.5rem;
-            height: 78.85px;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #C9A961;
-            text-decoration: none;
-        }
-
-        nav {
-            display: none;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        nav a {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: #C8BAA1;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: #C9A961;
-        }
-
-        .header-button {
-            display: none;
-            padding: 0.75rem 1.5rem;
-            border: 4px solid #C9A961;
-            background: linear-gradient(90deg, #8E4916 14.9%, #C19B56 100%);
-            color: #D4C5A9;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.875rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: opacity 0.3s;
-        }
-
-        .header-button:hover {
-            opacity: 0.9;
-        }
-
-        @media (min-width: 1024px) {
-            nav {
-                display: flex;
-            }
-            .header-button {
-                display: block;
-            }
-        }
-
-        /* Footer */
-        footer {
-            background-color: #090B18;
-            padding: 3rem 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .footer-content {
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .footer-divider {
-            width: 100%;
-            height: 1px;
-            background: #C9A961;
-            margin-bottom: 2rem;
-        }
-
-        .footer-nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-nav a {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: #C8BAA1;
-            transition: color 0.3s;
-        }
-
-        .footer-nav a:hover {
-            color: #C9A961;
-        }
-
-        .footer-divider-small {
-            width: 16rem;
-            height: 1px;
-            background: #C9A961;
-            margin: 0 auto 1.5rem;
-        }
-
-        .footer-copyright {
-            text-align: center;
-        }
-
-        .footer-copyright p {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #C8BAA1;
-            opacity: 0.4;
-        }
-
+    .error-page::before {
+        background-image: url('assets/images/Error-Img/Crest.png');
+    }
     </style>
-  </head>
+
+</head>
 <body>
     <header>
+        <div class="menu-overlay" id="menu-overlay"></div>
         <div class="header-content">
             <a href="index.html" class="logo">OATHBREAKER</a>
-            <nav>
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="nav-menu">
+                <a href="error.html" class="header-button mobile-cta">ENTER THE REALM</a>
                 <a href="index.html#realm">REALM</a>
                 <a href="index.html#arsenal">ARSENAL</a>
                 <a href="index.html#world">LORE</a>
-                <a href="index.html">About</a>
+                <a href="about.html">About</a>
                 <a href="support.html">SUPPORT</a>
                 <a href="updates.html">UPDATES</a>
             </nav>
-            <a href="error.html" class="header-button">ENTER THE REALM</a>
+            
+            <a href="error.html" class="header-button desktop-cta">ENTER THE REALM</a>
         </div>
     </header>
     
     <main>
         
-
 <!-- Error Content -->
-<div class="error-container">
+<section class="error-container" id="error-container">
     <div class="error-background"></div>
-    <div class="error-portal"></div>
-    <div class="error-content">
-        <h1 class="error-code">404</h1>
-        <h2 class="error-title">Path not found</h2>
-        <div class="divider"></div>
-        <p class="error-message">The page you seek has vanished into the void, it is not alone... Return to the homeland and forge onward.</p>
-        <a href="index.html" class="return-button">Return Oathbreaker</a>
+    
+    <!-- Random Character Image -->
+    <div class="error-character" id="error-character">
+        <img src="" alt="Lost Soul" id="random-character-img" class="character-img">
+        <div class="character-glow"></div>
     </div>
-</div>
+    
+    <!-- Floating Particles -->
+    <div class="error-particles" id="error-particles"></div>
+    
+    <div class="error-content">
+        <h1 class="error-code" id="error-code">404</h1>
+        <h2 class="error-title" id="error-title">Path not found</h2>
+        <div class="error-divider"></div>
+        <p class="error-message" id="error-message">The page you seek has vanished into the void, it is not alone... Return to the homeland and forge onward.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <!-- Game Hint -->
+        <p class="game-hint" id="game-hint">
+            <span class="hint-icon">⚔️</span>
+            <span class="hint-text">Click anywhere to begin your trial...</span>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="index.html" class="cta-button">Return Oathbreaker</a>
+    </div>
+    
+    <!-- Mini-Game Canvas (hidden until activated) -->
+    <div class="minigame-container" id="minigame-container">
+        <button class="game-close-x" id="close-game-x" aria-label="Close game">&times;</button>
+        <canvas id="game-canvas"></canvas>
+        <div class="game-ui">
+            <div class="game-score">Souls: <span id="game-score">0</span></div>
+            <div class="game-high-score">Best: <span id="high-score">0</span></div>
+        </div>
+        <div class="game-over-screen" id="game-over-screen">
+            <h3>Fallen in Battle</h3>
+            <div class="divider"></div>
+            <span class="score-label">Souls Collected</span>
+            <span class="score-display" id="final-score">0</span>
+            <div class="divider"></div>
+            <div class="button-group">
+                <button class="game-restart-btn" id="restart-btn">Rise Again</button>
+                <button class="game-close-btn" id="close-game-btn">Return to Void</button>
+            </div>
+        </div>
+        <div class="game-instructions visible" id="game-instructions">
+            <h3>Soul Runner</h3>
+            <p>Dodge the shadows and collect lost souls to prove your worth.</p>
+            <p class="controls-hint">Press SPACE or TAP to jump</p>
+            <button class="game-start-btn" id="start-game-btn">Begin Trial</button>
+        </div>
+    </div>
+</section>
 
+<!-- Error Page Scripts -->
+<script src="assets/js/error-game.js"></script>
 
     </main>
     
@@ -223,7 +138,7 @@
             <div class="footer-divider-small"></div>
 
             <nav class="footer-nav">
-                <a href="index.html">About</a>
+                <a href="about.html">About</a>
                 <a href="support.html">SUPPORT</a>
                 <a href="updates.html">UPDATES</a>
             </nav>
@@ -235,11 +150,22 @@
             </div>
         </div>
     </footer>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.0/mustache.min.js"></script>
-    <script src="http://localhost/Mustache-website/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js" integrity="sha512-XJ4QZR4O9YMMGT8UB0vO64YZb6nIKT9lqx4dLKvJwsDbNBNz8P/WHBHPpU3dW7RVp/Nj/2XqL0C+8Q1sXhBt5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Hero Video Background -->
+    <script src="assets/js/hero-video.js"></script>
+    
       
-   </body>
+</body>
 </html>

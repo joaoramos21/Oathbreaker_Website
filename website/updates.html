@@ -2,254 +2,474 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Updates & Patch Notes - OATHBREAKER - OATHBREAKER</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
-    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.min.css?v=20260118b">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
-        body {
-            font-family: 'Inter', -apple-system, Roboto, sans-serif;
-            background: linear-gradient(234deg, #191B35 25.23%, #12142C 50.45%);
-            color: #EBEBEB;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-
-
-        /* Header */
-        header {
-            width: 100%;
-            background-color: #090B18;
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-
-        header::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 3.15px;
-            background-color: #2E2A28;
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 1.5rem;
-            height: 78.85px;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #C9A961;
-            text-decoration: none;
-        }
-
-        nav {
-            display: none;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        nav a {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: #C8BAA1;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: #C9A961;
-        }
-
-        .header-button {
-            display: none;
-            padding: 0.75rem 1.5rem;
-            border: 4px solid #C9A961;
-            background: linear-gradient(90deg, #8E4916 14.9%, #C19B56 100%);
-            color: #D4C5A9;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.875rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: opacity 0.3s;
-        }
-
-        .header-button:hover {
-            opacity: 0.9;
-        }
-
-        @media (min-width: 1024px) {
-            nav {
-                display: flex;
-            }
-            .header-button {
-                display: block;
-            }
-        }
-
-        /* Footer */
-        footer {
-            background-color: #090B18;
-            padding: 3rem 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .footer-content {
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .footer-divider {
-            width: 100%;
-            height: 1px;
-            background: #C9A961;
-            margin-bottom: 2rem;
-        }
-
-        .footer-nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-nav a {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: #C8BAA1;
-            transition: color 0.3s;
-        }
-
-        .footer-nav a:hover {
-            color: #C9A961;
-        }
-
-        .footer-divider-small {
-            width: 16rem;
-            height: 1px;
-            background: #C9A961;
-            margin: 0 auto 1.5rem;
-        }
-
-        .footer-copyright {
-            text-align: center;
-        }
-
-        .footer-copyright p {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #C8BAA1;
-            opacity: 0.4;
-        }
-
+    .hero::before {
+        background-image: url('assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png');
+    }
     </style>
-  </head>
+
+</head>
 <body>
     <header>
+        <div class="menu-overlay" id="menu-overlay"></div>
         <div class="header-content">
             <a href="index.html" class="logo">OATHBREAKER</a>
-            <nav>
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav id="nav-menu">
+                <a href="error.html" class="header-button mobile-cta">ENTER THE REALM</a>
                 <a href="index.html#realm">REALM</a>
                 <a href="index.html#arsenal">ARSENAL</a>
                 <a href="index.html#world">LORE</a>
-                <a href="index.html">About</a>
+                <a href="about.html">About</a>
                 <a href="support.html">SUPPORT</a>
                 <a href="updates.html">UPDATES</a>
             </nav>
-            <a href="error.html" class="header-button">ENTER THE REALM</a>
+            
+            <a href="error.html" class="header-button desktop-cta">ENTER THE REALM</a>
         </div>
     </header>
     
     <main>
         
+<!-- Hero Section -->
+<section class="hero hero-small has-video">
+    <div class="hero-video-container" id="hero-video-container">
+        <div class="hero-video-wrapper">
+            <video id="hero-video-player" autoplay muted loop playsinline disablepictureinpicture>
+                <source src="assets/images/Hero-banner/hero-banner.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-video-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <h1>Updates & Patch Notes</h1>
+        <p>Stay Updated with the Latest Changes</p>
+    </div>
+</section>
 
 <!-- Main Content -->
-<main>
-    <h1 class="page-title">Updates & Patch Notes</h1>
-
-    <div class="search-bar">
-        <input type="text" class="search-input" placeholder="Search...">
-        <button class="search-button">🔍</button>
-    </div>
-
-    <div class="patch-notes">
-        <div class="patch-item">
-            <div class="patch-content">
-                <div class="patch-header">
-                    <h2 class="patch-title">Version 1.1 - Day one patch</h2>
-                    <span class="patch-date">20 october</span>
+<section id="updates-content">
+    <div class="section-container">
+        <!-- Search and Filter Controls Panel -->
+        <div class="controls-panel">
+            <div class="controls-grid">
+                <!-- Search Bar Component -->
+                <div class="controls-search">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search updates..."
+                        aria-label="Search updates"
+                    >
+                    <button 
+                        class="search-button" 
+                        id="search-button"
+                        aria-label="Search"
+                        type="button"
+                    >
+                        <span>🔍</span>
+                    </button>
                 </div>
-                <div class="patch-divider"></div>
-                <div class="patch-badges">
-                    <div class="badge version">v 1.1.0</div>
-                    <div class="badge latest">latest</div>
+                <!-- Filter Controls Component -->
+                <div class="controls-filter-wrapper">
+                    <button 
+                        class="filter-button" 
+                        id="filter-toggle"
+                        aria-label="Toggle filters"
+                        type="button"
+                    >
+                        <span class="filter-icon">⚙️</span>
+                        <span class="filter-label">Filter</span>
+                        <span class="filter-count" id="filter-count" aria-label="Active filters count" style="display: none;">1</span>
+                    </button>
+                    <select 
+                        id="category-filter" 
+                        class="category-filter"
+                        aria-label="Filter by category"
+                    >
+                        <option value="">All Categories</option>
+                        <option value="new features">New Features</option>
+                        <option value="bugfixes">Bugfixes</option>
+                        <option value="balance changes">Balance Changes</option>
+                        <option value="seasonal event">Seasonal Event</option>
+                        <option value="improvements">Improvements</option>
+                        <option value="new content">New Content</option>
+                        <option value="major update">Major Update</option>
+                    </select>
                 </div>
-                <h3 class="patch-section-title">Bugfixes</h3>
-                <ul class="patch-list">
-                    <li>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.</li>
-                </ul>
+                
+                <!-- Active Filters Display -->
+                <div class="active-filters" id="active-filters" style="display: none;" role="status" aria-live="polite">
+                    <span class="filter-label-small">Active Filters:</span>
+                    <div class="filter-tags-container" id="filter-tags-container">
+                        <!-- Filter tags will be inserted here -->
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="patch-item">
-            <div class="patch-content">
-                <div class="patch-header">
-                    <h2 class="patch-title">Version 1.0 - Genesis</h2>
-                    <span class="patch-date">17 october</span>
+
+        <!-- Patch Notes Container -->
+        <div class="patch-notes" id="patch-notes-container">
+            <div class="patch-item" data-title="Version 2.3 - Shadow's Edge" data-date="January 8, 2026" data-version="v 2.3.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/1.png" alt="Version 2.3 - Shadow's Edge" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 2.3 - Shadow's Edge</h2>
+                        <span class="patch-date">January 8, 2026</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="badge latest">Latest</div>
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">New Features</h3>
+                        <ul class="patch-list">
+                            <li>Added new Shadow Realm dungeon with 5 challenging boss encounters</li>
+                            <li>Introduced Dark Covenant faction with unique questline and rewards</li>
+                            <li>New weapon type: Void Scythes with special soul-reaping mechanics</li>
+                            <li>Added transmog system for customizing armor appearance</li>
+                        </ul>
+                        <h3 class="patch-section-title">Bugfixes</h3>
+                        <ul class="patch-list">
+                            <li>Fixed issue where players could fall through the world in Crimson Wastes</li>
+                            <li>Resolved crash when opening inventory during boss transitions</li>
+                            <li>Fixed Oath Breaker achievement not unlocking properly</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
                 </div>
-                <div class="patch-divider"></div>
-                <div class="patch-badges">
-                    <div class="badge version">v 1.0.0</div>
+            </div>
+            <div class="patch-item" data-title="Version 2.2 - Winter's Fury" data-date="December 15, 2025" data-version="v 2.2.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/2.png" alt="Version 2.2 - Winter's Fury" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 2.2 - Winter's Fury</h2>
+                        <span class="patch-date">December 15, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">Seasonal Event</h3>
+                        <ul class="patch-list">
+                            <li>Winter Solstice event with limited-time frostbound weapons</li>
+                            <li>New ice-themed cosmetics and mount skins available</li>
+                            <li>Frostborne enemies now spawn in northern regions</li>
+                            <li>Seasonal achievements and titles added</li>
+                        </ul>
+                        <h3 class="patch-section-title">Balance Changes</h3>
+                        <ul class="patch-list">
+                            <li>Reduced damage of Blood Oath spell by 15%</li>
+                            <li>Increased movement speed of all heavy armor sets by 8%</li>
+                            <li>Adjusted boss scaling for groups of 3+ players</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
                 </div>
-                <h3 class="patch-section-title release">Initial Release</h3>
-                <ul class="patch-list">
-                    <li>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.</li>
-                </ul>
+            </div>
+            <div class="patch-item" data-title="Version 2.1 - Echoes of the Past" data-date="November 22, 2025" data-version="v 2.1.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/3.png" alt="Version 2.1 - Echoes of the Past" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 2.1 - Echoes of the Past</h2>
+                        <span class="patch-date">November 22, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">New Content</h3>
+                        <ul class="patch-list">
+                            <li>Added Memory Fragment collectibles scattered across the world</li>
+                            <li>New lore codex system for tracking discovered stories</li>
+                            <li>Three new legendary weapons hidden in secret locations</li>
+                            <li>Updated character customization with new hairstyles and tattoos</li>
+                        </ul>
+                        <h3 class="patch-section-title">Improvements</h3>
+                        <ul class="patch-list">
+                            <li>Enhanced lighting system for improved atmosphere</li>
+                            <li>Optimized performance in densely populated areas</li>
+                            <li>Improved UI responsiveness and load times</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 2.0 - The Reckoning" data-date="October 30, 2025" data-version="v 2.0.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/library.jpg" alt="Version 2.0 - The Reckoning" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 2.0 - The Reckoning</h2>
+                        <span class="patch-date">October 30, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title release">Major Update</h3>
+                        <ul class="patch-list">
+                            <li>Complete combat system overhaul with new combo mechanics</li>
+                            <li>Raised level cap from 50 to 75 with new skill trees</li>
+                            <li>Added PvP arena system with ranked matchmaking</li>
+                            <li>New endgame raid: The Obsidian Citadel (10-player)</li>
+                            <li>Introduced Prestige system for max-level characters</li>
+                            <li>Major graphics upgrade with ray tracing support</li>
+                        </ul>
+                        <h3 class="patch-section-title">Bugfixes</h3>
+                        <ul class="patch-list">
+                            <li>Fixed numerous quest progression blockers</li>
+                            <li>Resolved memory leak causing performance degradation</li>
+                            <li>Fixed weapon stats not displaying correctly in inventory</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 1.8 - Crimson Moon" data-date="September 18, 2025" data-version="v 1.8.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/3.png" alt="Version 1.8 - Crimson Moon" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 1.8 - Crimson Moon</h2>
+                        <span class="patch-date">September 18, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">New Features</h3>
+                        <ul class="patch-list">
+                            <li>Blood Moon event now occurs every 7 in-game days</li>
+                            <li>New vampire-themed armor sets and weapons</li>
+                            <li>Added night vision potion and dark sight ability</li>
+                            <li>New nocturnal creatures spawn during night hours</li>
+                        </ul>
+                        <h3 class="patch-section-title">Balance Changes</h3>
+                        <ul class="patch-list">
+                            <li>Nerfed Shadow Step ability cooldown to 12 seconds</li>
+                            <li>Buffed defensive stats on plate armor by 20%</li>
+                            <li>Adjusted drop rates for rare materials</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 1.6 - Guild Wars" data-date="August 5, 2025" data-version="v 1.6.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/Weapons.jpg" alt="Version 1.6 - Guild Wars" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 1.6 - Guild Wars</h2>
+                        <span class="patch-date">August 5, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">Guild System</h3>
+                        <ul class="patch-list">
+                            <li>Introduced guild creation and management features</li>
+                            <li>Guild halls with customizable decorations</li>
+                            <li>Guild vs Guild territory control battles</li>
+                            <li>Guild achievements and leaderboards</li>
+                            <li>Shared guild bank and resources</li>
+                        </ul>
+                        <h3 class="patch-section-title">Improvements</h3>
+                        <ul class="patch-list">
+                            <li>Enhanced social features and chat system</li>
+                            <li>Improved server stability during peak hours</li>
+                            <li>Added guild-exclusive quests and rewards</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 1.4 - Forge of Legends" data-date="July 12, 2025" data-version="v 1.4.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/brave_JUhvOXEJ1V.png" alt="Version 1.4 - Forge of Legends" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 1.4 - Forge of Legends</h2>
+                        <span class="patch-date">July 12, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">Crafting Overhaul</h3>
+                        <ul class="patch-list">
+                            <li>Redesigned crafting system with modular components</li>
+                            <li>Added weapon enchanting and enhancement mechanics</li>
+                            <li>New legendary crafting recipes for master artisans</li>
+                            <li>Crafting stations can now be placed in player housing</li>
+                            <li>Introduced material quality tiers (Common to Mythic)</li>
+                        </ul>
+                        <h3 class="patch-section-title">Bugfixes</h3>
+                        <ul class="patch-list">
+                            <li>Fixed crafting menu not responding to keyboard inputs</li>
+                            <li>Resolved issue with materials disappearing from inventory</li>
+                            <li>Fixed enchantment effects not applying correctly</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 1.2 - Realm Reborn" data-date="May 28, 2025" data-version="v 1.2.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/brave_JxvY6Bf9Gx.png" alt="Version 1.2 - Realm Reborn" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 1.2 - Realm Reborn</h2>
+                        <span class="patch-date">May 28, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">World Expansion</h3>
+                        <ul class="patch-list">
+                            <li>Added three new explorable regions: Whispering Woods, Crystal Caverns, Scorched Barrens</li>
+                            <li>50+ new quests and storylines across new regions</li>
+                            <li>New enemy types and mini-bosses in each region</li>
+                            <li>Hidden secrets and easter eggs scattered throughout</li>
+                        </ul>
+                        <h3 class="patch-section-title">Quality of Life</h3>
+                        <ul class="patch-list">
+                            <li>Added fast travel points in major cities</li>
+                            <li>Improved quest tracking and waypoint system</li>
+                            <li>Enhanced minimap with customizable markers</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 1.1 - Day One Patch" data-date="April 20, 2025" data-version="v 1.1.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png" alt="Version 1.1 - Day One Patch" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 1.1 - Day One Patch</h2>
+                        <span class="patch-date">April 20, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title">Bugfixes</h3>
+                        <ul class="patch-list">
+                            <li>Fixed critical crash on startup for AMD graphics cards</li>
+                            <li>Resolved save game corruption issue affecting 5% of players</li>
+                            <li>Fixed dialogue audio not syncing with subtitles</li>
+                            <li>Corrected missing textures in tutorial area</li>
+                            <li>Fixed achievement tracking not updating properly</li>
+                        </ul>
+                        <h3 class="patch-section-title">Improvements</h3>
+                        <ul class="patch-list">
+                            <li>Optimized frame rate in densely populated areas</li>
+                            <li>Improved controller support and button mapping</li>
+                            <li>Enhanced UI scaling for ultrawide monitors</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
+            </div>
+            <div class="patch-item" data-title="Version 1.0 - Genesis" data-date="April 17, 2025" data-version="v 1.0.0">
+                <div class="patch-content">
+                    <img src="assets/images/Images-Misc/NVIDIA_Overlay_3W0COA7Wxr.png" alt="Version 1.0 - Genesis" class="patch-image">
+                    <div class="patch-header">
+                        <h2 class="patch-title">Version 1.0 - Genesis</h2>
+                        <span class="patch-date">April 17, 2025</span>
+                    </div>
+                    <div class="patch-divider"></div>
+                    <div class="patch-badges-tags">
+                        <div class="patch-categories" data-categories="">
+                            <!-- Category tags will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="patch-sections-wrapper">
+                        <h3 class="patch-section-title release">Initial Release</h3>
+                        <ul class="patch-list">
+                            <li>Launch of OATHBREAKER - A World of Shadows and Legends</li>
+                            <li>Core story campaign with 30+ hours of gameplay</li>
+                            <li>Five unique character classes with distinct playstyles</li>
+                            <li>Expansive open world with dynamic day/night cycle</li>
+                            <li>Over 100 weapons and armor pieces to collect</li>
+                            <li>Boss battles featuring epic encounters and unique mechanics</li>
+                            <li>Character customization system with deep progression</li>
+                            <li>Original soundtrack with over 50 tracks</li>
+                        </ul>
+                    </div>
+                    <div class="patch-expand-indicator">Tap to expand</div>
+                </div>
             </div>
         </div>
+        
+        <!-- No Results Message -->
+        <div class="no-results" id="no-results" style="display: none;">
+            <p>No updates found matching your search.</p>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+            <button class="pagination-btn" id="prev-btn" disabled>
+                <span>←</span> Previous
+            </button>
+            <div class="pagination-info">
+                <span id="page-info">Page <span id="current-page">1</span> of <span id="total-pages">2</span></span>
+            </div>
+            <button class="pagination-btn" id="next-btn">
+                Next <span>→</span>
+            </button>
+        </div>
     </div>
-
-    <!-- Pagination -->
-    <div class="pagination">
-        <button>←</button>
-        <button>→</button>
-    </div>
-</main>
-
+</section>
 
     </main>
     
@@ -266,7 +486,7 @@
             <div class="footer-divider-small"></div>
 
             <nav class="footer-nav">
-                <a href="index.html">About</a>
+                <a href="about.html">About</a>
                 <a href="support.html">SUPPORT</a>
                 <a href="updates.html">UPDATES</a>
             </nav>
@@ -278,11 +498,23 @@
             </div>
         </div>
     </footer>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.0/mustache.min.js"></script>
-    <script src="http://localhost/Mustache-website/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js" integrity="sha512-XJ4QZR4O9YMMGT8UB0vO64YZb6nIKT9lqx4dLKvJwsDbNBNz8P/WHBHPpU3dW7RVp/Nj/2XqL0C+8Q1sXhBt5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Hero Video Background -->
+    <script src="assets/js/hero-video.js"></script>
+    
+    <script src="assets/js/updates.js"></script>
       
-   </body>
+</body>
 </html>
