@@ -1,54 +1,74 @@
 {{< layout}}
 {{$main}}
-{{$content}}
-<!-- Main Content -->
-<main>
-    <h1 class="page-title">{{pageHeading}}</h1>
-
-    <!-- Contact Cards -->
-    <div class="contact-cards">
-        {{#contactCards}}
-        <div class="card">
-            <h2>{{title}}</h2>
-            {{#items}}
-            <div class="card-item">
-                <p class="card-label">{{label}}:</p>
-                <p class="card-content">{{#isLink}}<a href="{{value}}">{{value}}</a>{{/isLink}}{{^isLink}}{{value}}{{/isLink}}</p>
-            </div>
-            {{/items}}
-        </div>
-        {{/contactCards}}
+<!-- Hero Section -->
+<section class="hero hero-small{{#heroVideo}} has-video{{/heroVideo}}">
+    {{> hero-video}}
+    <div class="hero-content">
+        <h1>{{heroTitle}}</h1>
+        <p>{{heroSubtitle}}</p>
     </div>
+</section>
 
-    <!-- Contact Form -->
-    <form class="contact-form">
-        <h2>{{formTitle}}</h2>
+<!-- Support Content -->
+<section id="support-content">
+    <div class="section-container">
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+            {{#contactCards}}
+            <div class="card">
+                <h2>{{title}}</h2>
+                {{#items}}
+                <div class="card-item">
+                    <p class="card-label">{{label}}:</p>
+                    <p class="card-content">{{#isLink}}<a href="{{value}}">{{value}}</a>{{/isLink}}{{^isLink}}{{value}}{{/isLink}}</p>
+                </div>
+                {{/items}}
+            </div>
+            {{/contactCards}}
 
-        {{#formFields}}
-        <div class="form-group">
-            <label class="form-label">{{label}}:</label>
-            <div class="form-input-wrapper">
-                {{#isTextarea}}
-                <textarea placeholder="{{placeholder}}" {{#required}}required{{/required}}></textarea>
-                {{/isTextarea}}
-                {{#isSelect}}
-                <select {{#required}}required{{/required}}>
-                    <option value="">{{placeholder}}</option>
-                    {{#options}}
-                    <option value="{{value}}">{{label}}</option>
-                    {{/options}}
-                </select>
-                {{/isSelect}}
-                {{#isInput}}
-                <input type="{{type}}" placeholder="{{placeholder}}" {{#required}}required{{/required}}>
-                {{/isInput}}
+            <!-- Resource Links -->
+            <div class="card resource-buttons-card">
+                <h2>Quick Links</h2>
+                <div class="resource-buttons">
+                    {{#resourceLinks}}
+                    <a href="{{url}}" class="resource-button">
+                        <span class="resource-icon">{{icon}}</span>
+                        <span class="resource-title">{{title}}</span>
+                    </a>
+                    {{/resourceLinks}}
+                </div>
             </div>
         </div>
-        {{/formFields}}
 
-        <button type="submit" class="submit-button">{{submitText}}</button>
-    </form>
-</main>
-{{/content}}
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <h2>{{formTitle}}</h2>
+
+            {{#formFields}}
+            <div class="form-group">
+                <label class="form-label">{{label}}:</label>
+                <div class="form-input-wrapper">
+                    {{#isTextarea}}
+                    <textarea placeholder="{{placeholder}}" {{#required}}required{{/required}}></textarea>
+                    {{/isTextarea}}
+                    {{#isSelect}}
+                    <select {{#required}}required{{/required}}>
+                        <option value="">{{placeholder}}</option>
+                        {{#options}}
+                        <option value="{{value}}">{{label}}</option>
+                        {{/options}}
+                    </select>
+                    {{/isSelect}}
+                    {{#isInput}}
+                    <input type="{{type}}" placeholder="{{placeholder}}" {{#required}}required{{/required}}>
+                    {{/isInput}}
+                </div>
+            </div>
+            {{/formFields}}
+
+            <button type="submit" class="submit-button">{{submitText}}</button>
+        </form>
+    </div>
+</section>
 {{/main}}
 {{/layout}}

@@ -1,0 +1,101 @@
+{{< layout}}
+
+{{$main}}
+<!-- Hero Section -->
+<section class="hero{{#heroVideo}} has-video{{/heroVideo}}">
+    {{> hero-video}}
+    <div class="hero-content">
+        <h1>{{hero.title}}</h1>
+        <p>{{hero.subtitle}}</p>
+        <a href="{{hero.ctaLink}}" class="cta-button">{{hero.ctaText}}</a>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section id="mission">
+    <div class="section-container">
+        <h2 class="section-title">{{missionSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{missionSection.subtitle}}</p>
+        <div class="about-content">
+            {{#missionSection.content}}
+            <p>{{.}}</p>
+            {{/missionSection.content}}
+        </div>
+    </div>
+</section>
+
+<!-- Story Section -->
+<section id="story">
+    <div class="section-container">
+        <h2 class="section-title">{{storySection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{storySection.subtitle}}</p>
+        <div class="story-grid">
+            <div class="story-image">
+                <img src="{{storySection.image}}" alt="{{storySection.imageAlt}}">
+            </div>
+            <div class="story-content">
+                {{#storySection.content}}
+                <p>{{.}}</p>
+                {{/storySection.content}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section id="values">
+    <div class="section-container">
+        <h2 class="section-title">{{valuesSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{valuesSection.subtitle}}</p>
+        <div class="values-grid">
+            {{#valuesSection.values}}
+            <div class="value-item">
+                <h3>{{name}}</h3>
+                <p>{{description}}</p>
+            </div>
+            {{/valuesSection.values}}
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team">
+    <div class="section-container">
+        <h2 class="section-title">{{teamSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{teamSection.subtitle}}</p>
+        <div class="team-grid">
+            {{#teamSection.members}}
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{image}}" alt="{{name}}">
+                </div>
+                <h3 class="member-name">{{name}}</h3>
+                <p class="member-role">{{role}}</p>
+                <p class="member-bio">{{bio}}</p>
+            </div>
+            {{/teamSection.members}}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="cta">
+    <div class="section-container">
+        <h2 class="section-title">{{ctaSection.title}}</h2>
+        <div class="divider"></div>
+        <p class="subtitle">{{ctaSection.subtitle}}</p>
+        <div class="about-content">
+            <p>{{ctaSection.content}}</p>
+        </div>
+        <div class="world-button-wrapper">
+            <a href="{{ctaSection.ctaLink}}" class="world-button">{{ctaSection.ctaText}}</a>
+        </div>
+    </div>
+</section>
+{{/main}}
+
+{{/layout}}

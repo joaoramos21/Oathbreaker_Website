@@ -1,49 +1,27 @@
 {{< layout}}
 {{$main}}
-{{$content}}
-<!-- Main Content -->
-<main>
-    <h1 class="page-title">{{pageHeading}}</h1>
-
-    <div class="search-bar">
-        <input type="text" class="search-input" placeholder="{{searchPlaceholder}}">
-        <button class="search-button">🔍</button>
+<!-- Hero Section -->
+<section class="hero hero-small{{#heroVideo}} has-video{{/heroVideo}}">
+    {{> hero-video}}
+    <div class="hero-content">
+        <h1>{{heroTitle}}</h1>
+        <p>{{heroSubtitle}}</p>
     </div>
+</section>
 
-    <div class="patch-notes">
-        {{#patchNotes}}
-        <div class="patch-item">
-            <div class="patch-content">
-                <div class="patch-header">
-                    <h2 class="patch-title">{{title}}</h2>
-                    <span class="patch-date">{{date}}</span>
-                </div>
-                <div class="patch-divider"></div>
-                <div class="patch-badges">
-                    <div class="badge version">{{version}}</div>
-                    {{#isLatest}}
-                    <div class="badge latest">latest</div>
-                    {{/isLatest}}
-                </div>
-                {{#sections}}
-                <h3 class="patch-section-title{{#isRelease}} release{{/isRelease}}">{{title}}</h3>
-                <ul class="patch-list">
-                    {{#items}}
-                    <li>{{.}}</li>
-                    {{/items}}
-                </ul>
-                {{/sections}}
+<!-- Main Content -->
+<section id="updates-content">
+    <div class="section-container">
+        <!-- Search and Filter Controls Panel -->
+        <div class="controls-panel">
+            <div class="controls-grid">
+                {{> search-bar}}
+                {{> filters}}
             </div>
         </div>
-        {{/patchNotes}}
-    </div>
 
-    <!-- Pagination -->
-    <div class="pagination">
-        <button>←</button>
-        <button>→</button>
+        {{> updates-posts}}
     </div>
-</main>
-{{/content}}
+</section>
 {{/main}}
 {{/layout}}

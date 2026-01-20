@@ -1,0 +1,79 @@
+{{<layout}}
+{{$main}}
+<!-- Hero Section -->
+<section class="hero hero-small{{#heroVideo}} has-video{{/heroVideo}}">
+    {{> hero-video}}
+    <div class="hero-content">
+        <h1>{{pageHeading}}</h1>
+        <p>{{heroSubtitle}}</p>
+    </div>
+</section>
+
+<!-- Terms of Service Content -->
+<section id="terms-content">
+    <div class="section-container">
+        <!-- Back to Support -->
+        <div class="back-navigation">
+            <a href="{{backLink}}" class="back-link">
+                <span class="back-arrow">←</span>
+                <span>{{backText}}</span>
+            </a>
+        </div>
+
+        <!-- Introduction -->
+        <div class="terms-intro">
+            <p class="terms-intro-text">{{introText}}</p>
+            <div class="terms-meta">
+                <span class="terms-date">📅 Last Updated: {{lastUpdated}}</span>
+                <span class="terms-version">📋 Version {{version}}</span>
+            </div>
+        </div>
+
+        <!-- Terms Categories -->
+        <div class="terms-categories">
+            {{#categories}}
+            <div class="terms-category">
+                <h2 class="category-title">
+                    <span class="category-icon">{{icon}}</span>
+                    {{title}}
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="terms-list">
+                    {{#sections}}
+                    <div class="terms-item">
+                        <button class="terms-header" aria-expanded="false">
+                            <span class="terms-text">{{title}}</span>
+                            <span class="terms-toggle">◆</span>
+                        </button>
+                        <div class="terms-answer">
+                            {{#paragraphs}}
+                            <p>{{.}}</p>
+                            {{/paragraphs}}
+                            {{#list}}
+                            <ul class="terms-list-items">
+                                {{#items}}
+                                <li>{{.}}</li>
+                                {{/items}}
+                            </ul>
+                            {{/list}}
+                        </div>
+                    </div>
+                    {{/sections}}
+                </div>
+            </div>
+            {{/categories}}
+        </div>
+
+        <!-- Terms Footer -->
+        <div class="terms-footer">
+            <div class="terms-footer-content">
+                <h3>{{footerTitle}}</h3>
+                <p>{{footerText}}</p>
+                <a href="{{footerLink}}" class="cta-button">{{footerButtonText}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{/main}}
+{{/layout}}

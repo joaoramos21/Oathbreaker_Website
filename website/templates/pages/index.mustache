@@ -1,7 +1,8 @@
 {{<layout}}
 {{$main}}
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero{{#heroVideo}} has-video{{/heroVideo}}">
+    {{> hero-video}}
     <div class="hero-content">
         <h1>{{hero.title}}</h1>
         <p>{{hero.subtitle}}</p>
@@ -25,6 +26,9 @@
                 <div class="news-item">
                     <h3>{{title}}{{#date}} <span class="news-date">{{date}}</span>{{/date}}</h3>
                     <p>{{content}}</p>
+                    {{#link}}
+                    <a href="{{link}}" class="read-more-link">Read full patch notes →</a>
+                    {{/link}}
                 </div>
                 {{/newsSection.items}}
             </div>
@@ -46,8 +50,6 @@
     <div class="section-container">
         <h2 class="section-title">{{vesselsSection.title}}</h2>
         <div class="dividers">
-            <div class="divider"></div>
-            <div class="divider"></div>
             <div class="divider"></div>
         </div>
         <p class="subtitle">{{vesselsSection.subtitle}}</p>
@@ -91,24 +93,7 @@
             {{/vesselsSection.vessel_3}}
         </div>
 
-        <!-- Weapon Card -->
-        <div class="weapon-card">
-            <img src="{{weaponCard.image}}" alt="{{weaponCard.name}}" class="weapon-image">
-            <h3 class="weapon-name">{{weaponCard.name}}</h3>
-            <div class="stats">
-                {{#weaponCard.stats}}
-                <div class="stat">
-                    <div class="stat-label">{{label}}</div>
-                    <div class="stat-value">{{value}}</div>
-                </div>
-                {{/weaponCard.stats}}
-            </div>
-            <p class="weapon-description">{{weaponCard.description}}</p>
-            <div class="arrow-buttons">
-                <button class="arrow-button">←</button>
-                <button class="arrow-button">→</button>
-            </div>
-        </div>
+        {{> weapon-card}}
     </div>
 </section>
 
@@ -127,7 +112,9 @@
             </div>
         </div>
 
-        <a href="{{worldSection.ctaLink}}" class="world-button">{{worldSection.ctaText}}</a>
+        <div class="world-button-wrapper">
+            <a href="{{worldSection.ctaLink}}" class="world-button">{{worldSection.ctaText}}</a>
+        </div>
     </div>
 </section>
 

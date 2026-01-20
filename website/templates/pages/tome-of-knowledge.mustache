@@ -1,0 +1,66 @@
+{{< layout}}
+{{$main}}
+<!-- Hero Section -->
+<section class="hero hero-small{{#heroVideo}} has-video{{/heroVideo}}">
+    {{> hero-video}}
+    <div class="hero-content">
+        <h1>{{heroTitle}}</h1>
+        <p>{{heroSubtitle}}</p>
+    </div>
+</section>
+
+<!-- Tome of Knowledge Content -->
+<section id="tome-content">
+    <div class="section-container">
+        <!-- Back to Support -->
+        <div class="back-navigation">
+            <a href="{{backLink}}" class="back-link">
+                <span class="back-arrow">←</span>
+                <span>{{backText}}</span>
+            </a>
+        </div>
+
+        <!-- Introduction -->
+        <div class="tome-intro">
+            <p class="tome-intro-text">{{introText}}</p>
+        </div>
+
+        <!-- FAQ Categories -->
+        <div class="tome-categories">
+            {{#categories}}
+            <div class="tome-category">
+                <h2 class="category-title">
+                    <span class="category-icon">{{icon}}</span>
+                    {{title}}
+                </h2>
+                <div class="category-divider"></div>
+                
+                <div class="questions-list">
+                    {{#questions}}
+                    <div class="question-item">
+                        <button class="question-header" aria-expanded="false">
+                            <span class="question-text">{{question}}</span>
+                            <span class="question-toggle">◆</span>
+                        </button>
+                        <div class="question-answer">
+                            <p>{{answer}}</p>
+                        </div>
+                    </div>
+                    {{/questions}}
+                </div>
+            </div>
+            {{/categories}}
+        </div>
+
+        <!-- Still Need Help -->
+        <div class="tome-footer">
+            <div class="tome-footer-content">
+                <h3>{{footerTitle}}</h3>
+                <p>{{footerText}}</p>
+                <a href="support.html" class="cta-button">{{footerButtonText}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{/main}}
+{{/layout}}
