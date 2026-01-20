@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{title}}</title>
     {{> metadata}}
-    <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
-    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260120">
     
     {{> styles}}
-  </head>
+</head>
 <body>
     {{> header}}
     
@@ -21,12 +29,25 @@
     </main>
     
     {{> footer}}
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.0/mustache.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js" integrity="sha512-XJ4QZR4O9YMMGT8UB0vO64YZb6nIKT9lqx4dLKvJwsDbNBNz8P/WHBHPpU3dW7RVp/Nj/2XqL0C+8Q1sXhBt5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Hero Video Background -->
+    {{#heroVideo}}
+    <script src="assets/js/hero-video.js"></script>
+    {{/heroVideo}}
+    
     {{> scripts}}
       
-   </body>
+</body>
 </html>
