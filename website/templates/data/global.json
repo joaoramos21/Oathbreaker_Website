@@ -4,11 +4,23 @@
   "copyright": "© 2025 OathBreaker | A World of Shadow and Legend",
   "ctaText": "ENTER THE REALM",
   "ctaLink": "error.html",
+  "heroVideo": {
+    "videoSrc": "assets/images/Hero-banner/hero-banner.mp4",
+    "videoTitle": "Oathbreaker Animated Banner"
+  },
+  "backgroundImages": {
+    "hero": "assets/images/Hero-banner/banner.jpg",
+    "arsenal": "assets/images/Images-Misc/town-crier.jpg",
+    "world": "assets/images/Images-Misc/town-crier.jpg",
+    "story": "assets/images/Images-Misc/town-crier.jpg",
+    "team": "assets/images/Images-Misc/town-crier.jpg"
+  },
+  "scripts": [],
   "navLinks": [
     { "label": "REALM", "url": "index.html#realm" },
     { "label": "ARSENAL", "url": "index.html#arsenal" },
     { "label": "LORE", "url": "index.html#world" },
-    { "label": "About", "url": "index.html" },
+    { "label": "About", "url": "about.html" },
     { "label": "SUPPORT", "url": "support.html" },
     { "label": "UPDATES", "url": "updates.html" }
   ],
@@ -18,7 +30,7 @@
     { "label": "LORE", "url": "index.html#world" }
   ],
   "secondaryLinks": [
-    { "label": "About", "url": "index.html" },
+    { "label": "About", "url": "about.html" },
     { "label": "SUPPORT", "url": "support.html" },
     { "label": "UPDATES", "url": "updates.html" }
   ]

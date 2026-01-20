@@ -1,40 +1,324 @@
 {
   "lang": "en",
   "pageTitle": "Updates & Patch Notes - OATHBREAKER",
-  
+  "backgroundImages": {
+    "hero": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png"
+  },
+  "pageStyles": "",
+  "scripts": [
+    { "src": "assets/js/updates.js" }
+  ],
+  "heroTitle": "Updates & Patch Notes",
+  "heroSubtitle": "Stay Updated with the Latest Changes",
   "pageHeading": "Updates & Patch Notes",
-  "searchPlaceholder": "Search...",
+  "searchPlaceholder": "Search updates...",
+  "filterLabel": "Filter",
+  "allCategoriesLabel": "All Categories",
+  "activeFiltersLabel": "Active Filters",
+  "filterCategories": [
+    { "value": "new features", "label": "New Features" },
+    { "value": "bugfixes", "label": "Bugfixes" },
+    { "value": "balance changes", "label": "Balance Changes" },
+    { "value": "seasonal event", "label": "Seasonal Event" },
+    { "value": "improvements", "label": "Improvements" },
+    { "value": "new content", "label": "New Content" },
+    { "value": "major update", "label": "Major Update" }
+  ],
+  "noResultsMessage": "No updates found matching your search.",
+  "latestBadgeText": "Latest",
+  "pagination": {
+    "prevText": "Previous",
+    "nextText": "Next",
+    "pageText": "Page",
+    "ofText": "of"
+  },
   "patchNotes": [
     {
-      "title": "Version 1.1 - Day one patch",
-      "date": "20 october",
-      "version": "v 1.1.0",
+      "title": "Version 2.3 - Shadow's Edge",
+      "date": "January 8, 2026",
+      "version": "v 2.3.0",
+      "image": "assets/images/Images-Misc/1.png",
+      "imageAlt": "Shadow's Edge Update - Dark realm gates open",
       "isLatest": true,
+      "sections": [
+        {
+          "title": "New Features",
+          "isRelease": false,
+          "items": [
+            "Added new Shadow Realm dungeon with 5 challenging boss encounters",
+            "Introduced Dark Covenant faction with unique questline and rewards",
+            "New weapon type: Void Scythes with special soul-reaping mechanics",
+            "Added transmog system for customizing armor appearance"
+          ]
+        },
+        {
+          "title": "Bugfixes",
+          "isRelease": false,
+          "items": [
+            "Fixed issue where players could fall through the world in Crimson Wastes",
+            "Resolved crash when opening inventory during boss transitions",
+            "Fixed Oath Breaker achievement not unlocking properly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 2.2 - Winter's Fury",
+      "date": "December 15, 2025",
+      "version": "v 2.2.0",
+      "image": "assets/images/Images-Misc/2.png",
+      "imageAlt": "Winter's Fury Update - Frost engulfs the realm",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "Seasonal Event",
+          "isRelease": false,
+          "items": [
+            "Winter Solstice event with limited-time frostbound weapons",
+            "New ice-themed cosmetics and mount skins available",
+            "Frostborne enemies now spawn in northern regions",
+            "Seasonal achievements and titles added"
+          ]
+        },
+        {
+          "title": "Balance Changes",
+          "isRelease": false,
+          "items": [
+            "Reduced damage of Blood Oath spell by 15%",
+            "Increased movement speed of all heavy armor sets by 8%",
+            "Adjusted boss scaling for groups of 3+ players"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 2.1 - Echoes of the Past",
+      "date": "November 22, 2025",
+      "version": "v 2.1.0",
+      "image": "assets/images/Images-Misc/3.png",
+      "imageAlt": "Echoes of the Past Update - Ancient memories resurface",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "New Content",
+          "isRelease": false,
+          "items": [
+            "Added Memory Fragment collectibles scattered across the world",
+            "New lore codex system for tracking discovered stories",
+            "Three new legendary weapons hidden in secret locations",
+            "Updated character customization with new hairstyles and tattoos"
+          ]
+        },
+        {
+          "title": "Improvements",
+          "isRelease": false,
+          "items": [
+            "Enhanced lighting system for improved atmosphere",
+            "Optimized performance in densely populated areas",
+            "Improved UI responsiveness and load times"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 2.0 - The Reckoning",
+      "date": "October 30, 2025",
+      "version": "v 2.0.0",
+      "image": "assets/images/Images-Misc/library.jpg",
+      "imageAlt": "The Reckoning Update - The grand overhaul begins",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "Major Update",
+          "isRelease": true,
+          "items": [
+            "Complete combat system overhaul with new combo mechanics",
+            "Raised level cap from 50 to 75 with new skill trees",
+            "Added PvP arena system with ranked matchmaking",
+            "New endgame raid: The Obsidian Citadel (10-player)",
+            "Introduced Prestige system for max-level characters",
+            "Major graphics upgrade with ray tracing support"
+          ]
+        },
+        {
+          "title": "Bugfixes",
+          "isRelease": false,
+          "items": [
+            "Fixed numerous quest progression blockers",
+            "Resolved memory leak causing performance degradation",
+            "Fixed weapon stats not displaying correctly in inventory"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 1.8 - Crimson Moon",
+      "date": "September 18, 2025",
+      "version": "v 1.8.0",
+      "image": "assets/images/Images-Misc/3.png",
+      "imageAlt": "Crimson Moon Update - Blood moon rises over the realm",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "New Features",
+          "isRelease": false,
+          "items": [
+            "Blood Moon event now occurs every 7 in-game days",
+            "New vampire-themed armor sets and weapons",
+            "Added night vision potion and dark sight ability",
+            "New nocturnal creatures spawn during night hours"
+          ]
+        },
+        {
+          "title": "Balance Changes",
+          "isRelease": false,
+          "items": [
+            "Nerfed Shadow Step ability cooldown to 12 seconds",
+            "Buffed defensive stats on plate armor by 20%",
+            "Adjusted drop rates for rare materials"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 1.6 - Guild Wars",
+      "date": "August 5, 2025",
+      "version": "v 1.6.0",
+      "image": "assets/images/Images-Misc/Weapons.jpg",
+      "imageAlt": "Guild Wars Update - Factions clash for dominance",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "Guild System",
+          "isRelease": false,
+          "items": [
+            "Introduced guild creation and management features",
+            "Guild halls with customizable decorations",
+            "Guild vs Guild territory control battles",
+            "Guild achievements and leaderboards",
+            "Shared guild bank and resources"
+          ]
+        },
+        {
+          "title": "Improvements",
+          "isRelease": false,
+          "items": [
+            "Enhanced social features and chat system",
+            "Improved server stability during peak hours",
+            "Added guild-exclusive quests and rewards"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 1.4 - Forge of Legends",
+      "date": "July 12, 2025",
+      "version": "v 1.4.0",
+      "image": "assets/images/Images-Misc/brave_JUhvOXEJ1V.png",
+      "imageAlt": "Forge of Legends Update - Master the art of crafting",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "Crafting Overhaul",
+          "isRelease": false,
+          "items": [
+            "Redesigned crafting system with modular components",
+            "Added weapon enchanting and enhancement mechanics",
+            "New legendary crafting recipes for master artisans",
+            "Crafting stations can now be placed in player housing",
+            "Introduced material quality tiers (Common to Mythic)"
+          ]
+        },
+        {
+          "title": "Bugfixes",
+          "isRelease": false,
+          "items": [
+            "Fixed crafting menu not responding to keyboard inputs",
+            "Resolved issue with materials disappearing from inventory",
+            "Fixed enchantment effects not applying correctly"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 1.2 - Realm Reborn",
+      "date": "May 28, 2025",
+      "version": "v 1.2.0",
+      "image": "assets/images/Images-Misc/brave_JxvY6Bf9Gx.png",
+      "imageAlt": "Realm Reborn Update - New lands await discovery",
+      "isLatest": false,
+      "sections": [
+        {
+          "title": "World Expansion",
+          "isRelease": false,
+          "items": [
+            "Added three new explorable regions: Whispering Woods, Crystal Caverns, Scorched Barrens",
+            "50+ new quests and storylines across new regions",
+            "New enemy types and mini-bosses in each region",
+            "Hidden secrets and easter eggs scattered throughout"
+          ]
+        },
+        {
+          "title": "Quality of Life",
+          "isRelease": false,
+          "items": [
+            "Added fast travel points in major cities",
+            "Improved quest tracking and waypoint system",
+            "Enhanced minimap with customizable markers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Version 1.1 - Day One Patch",
+      "date": "April 20, 2025",
+      "version": "v 1.1.0",
+      "image": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png",
+      "imageAlt": "Day One Patch - Launch day improvements",
+      "isLatest": false,
       "sections": [
         {
           "title": "Bugfixes",
           "isRelease": false,
           "items": [
-            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet."
+            "Fixed critical crash on startup for AMD graphics cards",
+            "Resolved save game corruption issue affecting 5% of players",
+            "Fixed dialogue audio not syncing with subtitles",
+            "Corrected missing textures in tutorial area",
+            "Fixed achievement tracking not updating properly"
+          ]
+        },
+        {
+          "title": "Improvements",
+          "isRelease": false,
+          "items": [
+            "Optimized frame rate in densely populated areas",
+            "Improved controller support and button mapping",
+            "Enhanced UI scaling for ultrawide monitors"
           ]
         }
       ]
     },
     {
       "title": "Version 1.0 - Genesis",
-      "date": "17 october",
+      "date": "April 17, 2025",
       "version": "v 1.0.0",
+      "image": "assets/images/Images-Misc/NVIDIA_Overlay_3W0COA7Wxr.png",
+      "imageAlt": "Genesis - The beginning of the Oathbreaker saga",
       "isLatest": false,
       "sections": [
         {
           "title": "Initial Release",
           "isRelease": true,
           "items": [
-            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-            "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet."
+            "Launch of OATHBREAKER - A World of Shadows and Legends",
+            "Core story campaign with 30+ hours of gameplay",
+            "Five unique character classes with distinct playstyles",
+            "Expansive open world with dynamic day/night cycle",
+            "Over 100 weapons and armor pieces to collect",
+            "Boss battles featuring epic encounters and unique mechanics",
+            "Character customization system with deep progression",
+            "Original soundtrack with over 50 tracks"
           ]
         }
       ]

@@ -1,9 +1,64 @@
 {
   "lang": "en",
+  "title": "404 - Path not found - OATHBREAKER",
   "pageTitle": "404 - Path not found - OATHBREAKER",
+  "backgroundImages": {
+    "error": "assets/images/Error-Img/Crest.png",
+    "errorAlt": "Oathbreaker Crest - A symbol of the lost realm"
+  },
+  "characterImages": [
+    {
+      "src": "assets/images/Error-Img/BeHel'Mor - Gluttony.png",
+      "alt": "BeHel'Mor - The Demon of Gluttony, devourer of lost souls"
+    },
+    {
+      "src": "assets/images/Error-Img/Galahad - Redemption.png",
+      "alt": "Galahad - The Redeemer, seeking salvation in the void"
+    },
+    {
+      "src": "assets/images/Error-Img/Lancelot - Honor.png",
+      "alt": "Lancelot - Knight of Honor, lost between worlds"
+    },
+    {
+      "src": "assets/images/Error-Img/Mane - Pride.png",
+      "alt": "Mane - Avatar of Pride, fallen from grace"
+    },
+    {
+      "src": "assets/images/Error-Img/The Architect.png",
+      "alt": "The Architect - Builder of impossible paths"
+    },
+    {
+      "src": "assets/images/Error-Img/The Seeker.png",
+      "alt": "The Seeker - Wanderer of forgotten realms"
+    },
+    {
+      "src": "assets/images/Error-Img/Void.png",
+      "alt": "The Void - Emptiness personified, guardian of lost pages"
+    },
+    {
+      "src": "assets/images/Error-Img/Watcher.png",
+      "alt": "The Watcher - Eternal observer of broken links"
+    }
+  ],
   "errorCode": "404",
   "errorTitle": "Path not found",
   "errorMessage": "The page you seek has vanished into the void, it is not alone... Return to the homeland and forge onward.",
   "returnText": "Return Oathbreaker",
-  "returnLink": "index.html"
+  "returnLink": "index.html",
+  "characterAlt": "Lost Soul wandering the void",
+  "gameHint": {
+    "icon": "⚔️",
+    "text": "Click anywhere to begin your trial..."
+  },
+  "miniGame": {
+    "title": "Soul Runner",
+    "subtitle": "Dodge the shadows, collect the souls",
+    "controlsHint": "Press SPACE or TAP to jump",
+    "startText": "Begin Trial",
+    "scoreLabel": "Score",
+    "bestLabel": "Best",
+    "gameOverTitle": "Fallen in Battle",
+    "restartText": "Rise Again",
+    "closeText": "Return to Void"
+  }
 }

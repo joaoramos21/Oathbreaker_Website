@@ -1,0 +1,107 @@
+{
+  "lang": "en",
+  "title": "Tome of Knowledge - OATHBREAKER",
+  "backgroundImages": {
+    "hero": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png"
+  },
+  "heroTitle": "Tome of Knowledge",
+  "heroSubtitle": "Ancient Wisdom for Wandering Souls",
+  "backLink": "support.html",
+  "backText": "Return to the Hall of Aid",
+  "introText": "Within these sacred pages lie the answers sought by countless travelers before you. Consult the wisdom gathered by our scribes, and may your path through the realm be illuminated.",
+  "categories": [
+    {
+      "icon": "⚔️",
+      "title": "The Art of Combat",
+      "questions": [
+        {
+          "question": "How do I master the ancient weapon arts?",
+          "answer": "Each weapon class possesses unique combat techniques passed down through generations. Visit the Arsenal section to study the different fighting styles. Practice in the training grounds before venturing into the wilds, and remember—timing and positioning are the true marks of a warrior."
+        },
+        {
+          "question": "Why does my blade seem to falter against certain foes?",
+          "answer": "Different creatures possess varying resistances to weapon types. Spectral beings may be immune to mundane steel, while armored foes require blunt force or piercing strikes. Consult the bestiary and adapt your arsenal accordingly."
+        },
+        {
+          "question": "How do I unlock legendary weapon techniques?",
+          "answer": "Legendary techniques are earned through trials of valor. Complete the ancient challenges scattered throughout the realm, defeat formidable guardians, and prove your worth. Some techniques are also taught by hidden masters dwelling in remote locations."
+        }
+      ]
+    },
+    {
+      "icon": "🛡️",
+      "title": "Realm Navigation & Exploration",
+      "questions": [
+        {
+          "question": "I find myself lost in the Shadowmere. How do I escape?",
+          "answer": "The Shadowmere is a treacherous region where conventional navigation fails. Seek the glowing wisps that mark safe passages, and avoid the crimson mists at all costs. If truly lost, use a Wayfinder's Stone to return to the last sanctuary you visited."
+        },
+        {
+          "question": "How do I unlock sealed gates and ancient doors?",
+          "answer": "Many gates require specific keys, runes, or completed quests to open. Examine nearby inscriptions for clues, speak with local inhabitants, and explore thoroughly. Some doors only reveal themselves during certain moon phases or after defeating nearby guardians."
+        },
+        {
+          "question": "Where can I find safe havens to rest and recover?",
+          "answer": "Sanctuaries are marked by golden braziers and the symbol of the Oathkeepers. Major settlements, hidden shrines, and ancient waypoints all provide respite. Resting at these locations will restore your vitality and allow you to commune with distant allies."
+        }
+      ]
+    },
+    {
+      "icon": "📜",
+      "title": "Account & Chronicle Matters",
+      "questions": [
+        {
+          "question": "How do I recover my lost chronicle (account)?",
+          "answer": "If you've lost access to your chronicle, seek the Archivists through our support channels. Provide the email bound to your account and any identifying information. The Archivists will verify your identity and restore your access within 48 hours."
+        },
+        {
+          "question": "Can I transfer my progress to another realm (platform)?",
+          "answer": "Cross-realm transfers are possible through the Chronicle Binding ritual. Navigate to your account settings, select 'Bind Chronicles,' and follow the sacred protocols. Note that some realm-specific achievements may not transfer."
+        },
+        {
+          "question": "How do I change my warrior's name or appearance?",
+          "answer": "Visit the Mirror of Reflection in any major settlement. For a modest offering of gold, you may alter your appearance. Name changes require a Scroll of Identity, obtainable through the in-game shop or special events."
+        }
+      ]
+    },
+    {
+      "icon": "⚙️",
+      "title": "Technical Enchantments",
+      "questions": [
+        {
+          "question": "The realm appears distorted or moves erratically. What sorcery is this?",
+          "answer": "Visual disturbances often stem from outdated enchantments (graphics drivers) or insufficient magical reserves (system resources). Ensure your scrying device meets the minimum requirements, update your visual enchantments, and try lowering the graphical fidelity in the settings menu."
+        },
+        {
+          "question": "I cannot connect to the realm servers. Am I banished?",
+          "answer": "Fear not, traveler—this is rarely banishment. Check if maintenance rituals are scheduled on our announcements page. Verify your connection to the Aethernet (internet), and ensure no protective wards (firewalls) are blocking the connection. If issues persist, contact our support scribes."
+        },
+        {
+          "question": "How do I report a glitch in the fabric of reality?",
+          "answer": "Anomalies in the realm should be reported immediately. Use the in-game reporting tool (press F12) or submit a detailed account through our support page. Include where the anomaly occurred, what actions triggered it, and any visual evidence you can capture."
+        }
+      ]
+    },
+    {
+      "icon": "🤝",
+      "title": "Guilds & Fellowship",
+      "questions": [
+        {
+          "question": "How do I form or join a guild?",
+          "answer": "To form a guild, gather five like-minded warriors and visit the Guild Registrar in any capital city. Pay the founding fee and choose your banner. To join an existing guild, seek out guild recruiters or use the Guild Finder in the social menu."
+        },
+        {
+          "question": "What benefits does guild membership provide?",
+          "answer": "Guild members gain access to shared resources, exclusive quests, guild halls, and coordinated raid opportunities. Higher-ranked members can unlock special titles, cosmetic rewards, and the ability to participate in inter-guild tournaments."
+        },
+        {
+          "question": "How do I communicate with distant allies?",
+          "answer": "Use the Whisperstone system to send private messages to allies regardless of location. Join voice channels through the party menu for real-time coordination. Guild members also have access to dedicated guild channels and announcement systems."
+        }
+      ]
+    }
+  ],
+  "footerTitle": "Wisdom Not Found?",
+  "footerText": "If the answers you seek elude these pages, our dedicated scribes stand ready to assist. Send word through the Hall of Aid, and guidance shall find you.",
+  "footerButtonText": "Seek the Scribes"
+}

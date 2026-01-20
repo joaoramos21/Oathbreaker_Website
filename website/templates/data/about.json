@@ -1,0 +1,85 @@
+{
+  "lang": "en",
+  "title": "About Us - OATHBREAKER",
+  "hasScrollBehavior": true,
+  "backgroundImages": {
+    "hero": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png",
+    "story": "assets/images/Images-Misc/brave_JxvY6Bf9Gx.png",
+    "team": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png"
+  },
+  "pageStyles": "",
+  "scripts": [],
+  "hero": {
+    "title": "ABOUT US",
+    "subtitle": "The Minds Behind the Shadows",
+    "ctaText": "JOIN OUR QUEST",
+    "ctaLink": "support.html"
+  },
+  "missionSection": {
+    "title": "Our Mission",
+    "subtitle": "Forging Legends, One Story at a Time",
+    "content": [
+      "At Oathbreaker Studios, we believe that games should be more than entertainment—they should be transformative experiences that ignite imagination and forge unforgettable memories. Our mission is to craft immersive worlds where every player becomes the hero of their own epic tale.",
+      "We are dedicated to pushing the boundaries of interactive storytelling, blending rich lore, challenging gameplay, and stunning visuals to create experiences that resonate long after the final battle is won."
+    ]
+  },
+  "storySection": {
+    "title": "Our Story",
+    "subtitle": "Born from Passion and Shadow",
+    "image": "assets/images/Images-Misc/brave_JUhvOXEJ1V.png",
+    "imageAlt": "Our Journey",
+    "content": [
+      "Oathbreaker began as a shared dream among a small group of passionate developers who believed that the best games come from authentic creative vision. Founded in 2020, our studio has grown from a handful of dreamers into a dedicated team united by our love for fantasy, mythology, and epic adventures.",
+      "Every member of our team brings unique expertise and unwavering dedication to their craft. Together, we've built not just a game, but a living world that continues to evolve with our community."
+    ]
+  },
+  "valuesSection": {
+    "title": "Our Values",
+    "subtitle": "The Pillars of Our Realm",
+    "values": [
+      {
+        "name": "Creativity",
+        "description": "We embrace bold ideas and encourage creative risk-taking. The most memorable moments come from daring to imagine the impossible and pushing the boundaries of interactive storytelling."
+      },
+      {
+        "name": "Community",
+        "description": "Our players are at the heart of everything we do. We listen, engage, and build together with the community that makes Oathbreaker possible, fostering a collaborative environment where every voice matters."
+      },
+      {
+        "name": "Transparency",
+        "description": "We believe in open communication and honest dialogue. From development updates to decision-making processes, we keep our community informed and involved in shaping the future of Oathbreaker."
+      }
+    ]
+  },
+  "teamSection": {
+    "title": "The Council",
+    "subtitle": "Masters of Their Craft",
+    "members": [
+      {
+        "name": "Ricardo Soares",
+        "role": "Creative Director",
+        "image": "assets/images/img-cara/Ric.png",
+        "bio": "A visionary storyteller with 15 years of experience crafting immersive game worlds and memorable characters."
+      },
+      {
+        "name": "João Ramos",
+        "role": "Lead Developer",
+        "image": "assets/images/img-cara/Joao.png",
+        "bio": "A technical wizard who transforms ambitious designs into seamless gameplay experiences and robust systems."
+      },
+      {
+        "name": "Daniel Neto",
+        "role": "Art Director",
+        "image": "assets/images/img-cara/Dani.png",
+        "bio": "A master visual artist whose dark fantasy aesthetic defines the haunting beauty of Oathbreaker's world."
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Join Our Journey",
+    "subtitle": "Be part of something legendary",
+    "content": "Whether you're a seasoned adventurer or new to the realm, there's a place for you in the Oathbreaker community. Join us as we continue to expand this world and create new legends together.",
+    "ctaText": "SUPPORT US",
+    "ctaLink": "support.html"
+  }
+}

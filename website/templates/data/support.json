@@ -1,9 +1,34 @@
 {
   "lang": "en",
-  "pageTitle": "Technical Support & Contact - OATHBREAKER",
+  "title": "Technical Support & Contact - OATHBREAKER",
   "hasInputs": true,
- 
+  "backgroundImages": {
+    "hero": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png"
+  },
+  "pageStyles": "",
+  "heroTitle": "Support",
+  "heroSubtitle": "We're Here to Help You on Your Journey",
   "pageHeading": "Technical Support & Contact",
+  "resourceLinks": [
+    {
+      "icon": "📜",
+      "title": "Tome of Knowledge",
+      "description": "Browse our comprehensive FAQ and find answers to common questions about gameplay, accounts, and more.",
+      "url": "tome-of-knowledge.html"
+    },
+    {
+      "icon": "⚖️",
+      "title": "Terms of Service",
+      "description": "Review our terms, conditions, and legal agreements governing your use of Oathbreaker.",
+      "url": "terms-of-service.html"
+    },
+    {
+      "icon": "💬",
+      "title": "Community Discord",
+      "description": "Join our community of adventurers, share strategies, and get help from fellow players.",
+      "url": "https://discord.gg/oathbreaker"
+    }
+  ],
   "contactCards": [
     {
       "title": "Get in Touch",
@@ -11,14 +36,6 @@
         { "label": "Email Support", "value": "support@oathbreaker.com", "isLink": false },
         { "label": "Phone", "value": "(+351) 92X XXX XXX", "isLink": false },
         { "label": "Response Time", "value": "Within 48 hours", "isLink": false }
-      ]
-    },
-    {
-      "title": "Support",
-      "items": [
-        { "label": "F.A.Q", "value": "https://faq.oathbreaker.com", "isLink": true },
-        { "label": "Help Documentation", "value": "https://docs.oathbreaker.com", "isLink": true },
-        { "label": "Community Discord", "value": "https://discord.gg/oathbreaker", "isLink": true }
       ]
     }
   ],

@@ -3,6 +3,17 @@
   "pageTitle": "A World of Shadows and Legends - OATHBREAKER",
   "hasScrollBehavior": true,
   "hasImages": true,
+  "backgroundImages": {
+    "hero": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png",
+    "arsenal": "assets/images/Images-Misc/NVIDIA_Overlay_02GJ2WeH5D.png",
+    "world": "assets/images/Images-Misc/NVIDIA_Overlay_3W0COA7Wxr.png"
+  },
+  "pageStyles": "",
+  "scripts": [
+    { "src": "assets/js/weapon-card.js" }
+  ],
+  "weaponsDataScript": true,
+  "weaponsData": "[{\"name\":\"Void Edge\",\"image\":\"assets/images/Images-weapon-classes/slash.png\",\"imageAlt\":\"Void Edge - A blade that cuts through reality\",\"stats\":[{\"label\":\"Damage\",\"value\":\"105\"},{\"label\":\"Speed\",\"value\":\"80\"}],\"description\":\"A cursed blade forged in the abyss, its edge tears through both flesh and spirit.\"},{\"name\":\"Thunder Maul\",\"image\":\"assets/images/Images-weapon-classes/blunt.png\",\"imageAlt\":\"Thunder Maul - Crushing force incarnate\",\"stats\":[{\"label\":\"Damage\",\"value\":\"130\"},{\"label\":\"Speed\",\"value\":\"55\"}],\"description\":\"An ancient warhammer imbued with storm essence, each strike echoes like thunder.\"},{\"name\":\"Soulpiercer\",\"image\":\"assets/images/Images-weapon-classes/pierce.png\",\"imageAlt\":\"Soulpiercer - Precision death from any distance\",\"stats\":[{\"label\":\"Damage\",\"value\":\"85\"},{\"label\":\"Speed\",\"value\":\"95\"}],\"description\":\"A spectral spear that phases through armor, striking directly at the soul.\"},{\"name\":\"Infernal Cannon\",\"image\":\"assets/images/Images-weapon-classes/blast.png\",\"imageAlt\":\"Infernal Cannon - Devastation in a single blast\",\"stats\":[{\"label\":\"Damage\",\"value\":\"150\"},{\"label\":\"Speed\",\"value\":\"40\"}],\"description\":\"A demonic siege weapon channeling hellfire, annihilating everything in its path.\"}]",
   "hero": {
     "title": "OATHBREAKER",
     "subtitle": "A World of Shadows and Legends",
@@ -11,93 +22,141 @@
   },
    "newsSection": {
     "title": "News of the realm",
-    "subtitle": "Lorem ipsum dolor sit amet",
-    "image": "assets/images/Images-Misc/town-crier.jpg",
+    "subtitle": "Stay informed with the latest updates and changes",
+    "image": "assets/images/Images-Misc/brave_JUhvOXEJ1V.png",
     "imageAlt": "Town Crier",
     "items": [
       {
-        "title": "Welcome to the realm",
-        "content": "\"Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet\"."
+        "title": "Version 2.3 - Shadow's Edge",
+        "date": "January 8, 2026",
+        "version": "v 2.3.0",
+        "content": "New Shadow Realm dungeon, Dark Covenant faction, Void Scythes weapon type, and transmog system added. Various bugfixes including world collision issues and achievement unlocking.",
+        "link": "updates.html"
       },
       {
-        "title": "Patch 1.1.0",
-        "date": "20 october",
-        "content": "\"Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet\"."
-      },
-      {
-        "title": "Patch 1.0.0",
-        "date": "17 october",
-        "content": "\"Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet\"."
+        "title": "Version 2.2 - Winter's Fury",
+        "date": "December 15, 2025",
+        "version": "v 2.2.0",
+        "content": "Winter Solstice event with frostbound weapons, ice-themed cosmetics, and seasonal achievements. Balance changes include Blood Oath spell nerf and heavy armor movement speed buff.",
+        "link": "updates.html"
       }
     ]
   },
   "arsenalSection": {
-    "title": "The Arsenal",
-    "subtitle": "Lorem ipsum dolor sit amet"
+    "title": "FREE TO PLAY",
+    "subtitle": "OathBreaker is a Free Game, check it out on our Roblox page."
   },
   "vesselsSection": {
-    "title": "The Vessels of Power",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "title": "The Vessels",
+    "subtitle": "Choose your champion and shape the fate of the realm",
     "vessel_1": [
       {
-        "name": "Void Preacher",
-        "lore": "Lorem ipsum dolor sit amet",
-        "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-        "image": "assets/images/Images-Misc/town-crier.jpg",
-        "imageAlt": "Void Preacher"
+        "name": "BeHel'Mor",
+        "loreLabel": "Origin",
+        "lore": "Oath of Gluttony",
+        "description": "Once a devout guardian, the Void Preacher succumbed to an endless hunger — not for food, but for power. Every soul consumed strengthens his Oath, warping flesh and reality alike.",
+        "image": "assets/images/Img-Char/BeHel'Mor - Gluttony.png",
+        "imageAlt": "BeHel'Mor - The Gluttonous Void Preacher, devourer of forbidden knowledge"
       }
     ],
     "vessel_2": [
       {
-        "name": "Void Preacher",
-        "lore": "Lorem ipsum dolor sit amet",
-        "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-        "image": "assets/images/Images-Misc/town-crier.jpg",
-        "imageAlt": "Void Preacher"
+        "name": "Moonlit SHADE",
+        "loreLabel": "Origin",
+        "lore": "Oath of Redemption",
+        "description": "An unstoppable warrior clad in ancient armor. Iron Sentinels stand as unbreakable bulwarks against the darkness, protecting allies with unwavering resolve.",
+        "image": "assets/images/Img-Char/Galahad - Redemption.png",
+        "imageAlt": "Iron Sentinel - Unbreakable guardian of the realm"
       }
     ],
     "vessel_3": [
       {
-        "name": "Void Preacher",
-        "lore": "Lorem ipsum dolor sit amet",
-        "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet.",
-        "image": "assets/images/Images-Misc/town-crier.jpg",
-        "imageAlt": "Void Preacher"
+        "name": "Storm Warden",
+        "loreLabel": "Origin",
+        "lore": "Oath of Storms",
+        "description": "A swift hunter who commands the fury of the storm. Storm Wardens strike with lightning precision, unleashing nature's wrath upon their enemies.",
+        "image": "assets/images/Img-Char/Lancelot - Honor.png",
+        "imageAlt": "Lancelot - The Honorable Storm Warden, guardian of the tempest"
       }
     ]
   },
   "weaponCard": {
-    "name": "Sword of Legends",
-    "image": "assets/images/Images-Misc/town-crier.jpg",
-    "stats": [{ "label": "Damage", "value": "99" }, { "label": "Speed", "value": "85" }],
-    "description": "Lorem ipsum dolor sit amet, ipsum dolor sit amet."
+    "name": "Void Edge",
+    "image": "assets/images/Images-weapon-classes/slash.png",
+    "imageAlt": "Void Edge - A blade that cuts through reality",
+    "stats": [{ "label": "Damage", "value": "105" }, { "label": "Speed", "value": "80" }],
+    "description": "A cursed blade forged in the abyss, its edge tears through both flesh and spirit."
   },
+  "weapons": [
+    {
+      "name": "Void Edge",
+      "image": "assets/images/Images-weapon-classes/slash.png",
+      "imageAlt": "Void Edge - Slashing weapon icon",
+      "stats": [{ "label": "Damage", "value": "105" }, { "label": "Speed", "value": "80" }],
+      "description": "A cursed blade forged in the abyss, its edge tears through both flesh and spirit."
+    },
+    {
+      "name": "Thunder Maul",
+      "image": "assets/images/Images-weapon-classes/blunt.png",
+      "imageAlt": "Thunder Maul - Blunt weapon icon",
+      "stats": [{ "label": "Damage", "value": "130" }, { "label": "Speed", "value": "55" }],
+      "description": "An ancient warhammer imbued with storm essence, each strike echoes like thunder."
+    },
+    {
+      "name": "Soulpiercer",
+      "image": "assets/images/Images-weapon-classes/pierce.png",
+      "imageAlt": "Soulpiercer - Piercing weapon icon",
+      "stats": [{ "label": "Damage", "value": "85" }, { "label": "Speed", "value": "95" }],
+      "description": "A spectral spear that phases through armor, striking directly at the soul."
+    },
+    {
+      "name": "Infernal Cannon",
+      "image": "assets/images/Images-weapon-classes/blast.png",
+      "imageAlt": "Infernal Cannon - Blast weapon icon",
+      "stats": [{ "label": "Damage", "value": "150" }, { "label": "Speed", "value": "40" }],
+      "description": "A demonic siege weapon channeling hellfire, annihilating everything in its path."
+    }
+  ],
   "worldSection": {
-    "title": "The World",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "title": "TThe world of oathbreaker",
+    "subtitle": "Before steel, before magic — there were Oaths.",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "In the beginning, the world was bound by sacred vows. Mortals swore Oaths to ideals greater than themselves — virtues that shaped kingdoms and sins that shattered them.",
+      "When the first Oath was broken, the world fractured. From that fracture emerged the Vessels — living manifestations of belief twisted by failure, pride, hunger, and regret.",
+      "Oathbreaker is a realm shaped by choice. Every vow you swear grants power, and every vow you break leaves a scar — not just on you, but on the world itself.",
+      "The Realm remembers. - OathChronicles; 2025.."
     ],
     "ctaText": "EXPLORE THE REALM",
     "ctaLink": "error.html"
   },
   "communitySection": {
     "title": "Join the Community",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "subtitle": "Stand with thousands of warriors across the realm",
     "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "- Follow development updates;",
+      "- Share builds, strategies, and lore theories;",
+      "- Be the first to test new content and mounts, tester spots open from time to time;",
+      "",
+      "Join us and leave your mark on Oathbreaker."
     ],
     "socialLinks": [
       {
         "label": "YouTube",
         "url": "https://youtube.com",
-        "icon": "assets/images/Icons/youtube.svg",
-        "isYoutube": true
+        "icon": "assets/images/Icons/youtube-tile.svg"
+      },
+      {
+        "label": "Discord",
+        "url": "https://discord.com",
+        "icon": "assets/images/Icons/discord-tile.svg"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://tiktok.com",
+        "icon": "assets/images/Icons/tiktok-tile.svg"
       }
     ],
-    "image": "assets/images/Images-Misc/town-crier.jpg",
+    "image": "assets/images/Images-Misc/brave_JxvY6Bf9Gx.png",
     "imageAlt": "Community"
   }
 }
