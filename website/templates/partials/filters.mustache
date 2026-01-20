@@ -1,0 +1,31 @@
+<!-- Filter Controls Component -->
+<div class="controls-filter-wrapper">
+    <button 
+        class="filter-button" 
+        id="filter-toggle"
+        aria-label="Toggle filters"
+        type="button"
+    >
+        <span class="filter-icon">⚙️</span>
+        <span class="filter-label">{{filterLabel}}</span>
+        <span class="filter-count" id="filter-count" aria-label="Active filters count" style="display: none;">1</span>
+    </button>
+    <select 
+        id="category-filter" 
+        class="category-filter"
+        aria-label="Filter by category"
+    >
+        <option value="">{{allCategoriesLabel}}</option>
+        {{#filterCategories}}
+        <option value="{{value}}">{{label}}</option>
+        {{/filterCategories}}
+    </select>
+</div>
+
+<!-- Active Filters Display -->
+<div class="active-filters" id="active-filters" style="display: none;" role="status" aria-live="polite">
+    <span class="filter-label-small">{{activeFiltersLabel}}:</span>
+    <div class="filter-tags-container" id="filter-tags-container">
+        <!-- Filter tags will be inserted here -->
+    </div>
+</div>

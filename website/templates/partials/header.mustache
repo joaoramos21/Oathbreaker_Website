@@ -1,11 +1,21 @@
 <header>
+    <div class="menu-overlay" id="menu-overlay"></div>
     <div class="header-content">
         <a href="index.html" class="logo">{{siteName}}</a>
-        <nav>
+        
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav id="nav-menu">
+            <a href="{{ctaLink}}" class="header-button mobile-cta">{{ctaText}}</a>
             {{#navLinks}}
             <a href="{{url}}">{{label}}</a>
             {{/navLinks}}
         </nav>
-        <a href="{{ctaLink}}" class="header-button">{{ctaText}}</a>
+        
+        <a href="{{ctaLink}}" class="header-button desktop-cta">{{ctaText}}</a>
     </div>
 </header>

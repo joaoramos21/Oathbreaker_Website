@@ -1,0 +1,52 @@
+<!-- Patch Notes Container -->
+<div class="patch-notes" id="patch-notes-container">
+    {{#patchNotes}}
+    <div class="patch-item" data-title="{{title}}" data-date="{{date}}" data-version="{{version}}">
+        <div class="patch-content">
+            <img src="{{image}}" alt="{{title}}" class="patch-image">
+            <div class="patch-header">
+                <h2 class="patch-title">{{title}}</h2>
+                <span class="patch-date">{{date}}</span>
+            </div>
+            <div class="patch-divider"></div>
+            <div class="patch-badges-tags">
+                {{#isLatest}}
+                <div class="badge latest">{{latestBadgeText}}</div>
+                {{/isLatest}}
+                <div class="patch-categories" data-categories="">
+                    <!-- Category tags will be inserted here by JavaScript -->
+                </div>
+            </div>
+            <div class="patch-sections-wrapper">
+                {{#sections}}
+                <h3 class="patch-section-title{{#isRelease}} release{{/isRelease}}">{{title}}</h3>
+                <ul class="patch-list">
+                    {{#items}}
+                    <li>{{.}}</li>
+                    {{/items}}
+                </ul>
+                {{/sections}}
+            </div>
+            <div class="patch-expand-indicator">Tap to expand</div>
+        </div>
+    </div>
+    {{/patchNotes}}
+</div>
+
+<!-- No Results Message -->
+<div class="no-results" id="no-results" style="display: none;">
+    <p>{{noResultsMessage}}</p>
+</div>
+
+<!-- Pagination -->
+<div class="pagination" id="pagination">
+    <button class="pagination-btn" id="prev-btn" disabled>
+        <span>←</span> {{pagination.prevText}}
+    </button>
+    <div class="pagination-info">
+        <span id="page-info">{{pagination.pageText}} <span id="current-page">1</span> {{pagination.ofText}} <span id="total-pages">2</span></span>
+    </div>
+    <button class="pagination-btn" id="next-btn">
+        {{pagination.nextText}} <span>→</span>
+    </button>
+</div>

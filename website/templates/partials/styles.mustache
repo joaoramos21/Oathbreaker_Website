@@ -1,180 +1,52 @@
+{{! Dynamic Background Images - Generates CSS for section background images from page data }}
+{{#backgroundImages}}
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    {{#hasScrollBehavior}}
-    html {
-        scroll-behavior: smooth;
-    }
-    {{/hasScrollBehavior}}
-
-    body {
-        font-family: 'Inter', -apple-system, Roboto, sans-serif;
-        background: linear-gradient(234deg, #191B35 25.23%, #12142C 50.45%);
-        color: #EBEBEB;
-        line-height: 1.6;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    {{#hasImages}}
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-    {{/hasImages}}
-
-    {{#hasInputs}}
-    input, select, textarea {
-        font-family: inherit;
-    }
-    {{/hasInputs}}
-
-    /* Header */
-    header {
-        width: 100%;
-        background-color: #090B18;
-        position: sticky;
-        top: 0;
-        z-index: 50;
-    }
-
-    header::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 3.15px;
-        background-color: #2E2A28;
-    }
-
-    .header-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1.5rem;
-        height: 78.85px;
-        max-width: 1280px;
-        margin: 0 auto;
-    }
-
-    .logo {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #C9A961;
-        text-decoration: none;
-    }
-
-    nav {
-        display: none;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    nav a {
-        font-family: 'Cinzel Decorative', serif;
-        font-size: 1rem;
-        font-weight: 700;
-        color: #C8BAA1;
-        transition: color 0.2s;
-    }
-
-    nav a:hover {
-        color: #C9A961;
-    }
-
-    .header-button {
-        display: none;
-        padding: 0.75rem 1.5rem;
-        border: 4px solid #C9A961;
-        background: linear-gradient(90deg, #8E4916 14.9%, #C19B56 100%);
-        color: #D4C5A9;
-        font-family: 'Cinzel Decorative', serif;
-        font-size: 0.875rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: opacity 0.3s;
-    }
-
-    .header-button:hover {
-        opacity: 0.9;
-    }
-
-    @media (min-width: 1024px) {
-        nav {
-            display: flex;
-        }
-        .header-button {
-            display: block;
-        }
-    }
-
-    /* Footer */
-    footer {
-        background-color: #090B18;
-        padding: 3rem 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .footer-content {
-        max-width: 1280px;
-        margin: 0 auto;
-    }
-
-    .footer-divider {
-        width: 100%;
-        height: 1px;
-        background: #C9A961;
-        margin-bottom: 2rem;
-    }
-
-    .footer-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .footer-nav a {
-        font-family: 'Cinzel Decorative', serif;
-        font-size: 0.875rem;
-        font-weight: 700;
-        color: #C8BAA1;
-        transition: color 0.3s;
-    }
-
-    .footer-nav a:hover {
-        color: #C9A961;
-    }
-
-    .footer-divider-small {
-        width: 16rem;
-        height: 1px;
-        background: #C9A961;
-        margin: 0 auto 1.5rem;
-    }
-
-    .footer-copyright {
-        text-align: center;
-    }
-
-    .footer-copyright p {
-        font-family: 'Cinzel Decorative', serif;
-        font-size: 0.75rem;
-        font-weight: 700;
-        color: #C8BAA1;
-        opacity: 0.4;
-    }
-
-    {{#pageStyles}}
-    {{{pageStyles}}}
-    {{/pageStyles}}
+{{#hero}}
+.hero::before {
+    background-image: url('{{hero}}');
+}
+{{/hero}}
+{{#arsenal}}
+#arsenal {
+    background-image: url('{{arsenal}}');
+}
+{{/arsenal}}
+{{#world}}
+#world {
+    background-image: url('{{world}}');
+}
+{{/world}}
+{{#story}}
+#story {
+    background-image: url('{{story}}');
+}
+{{/story}}
+{{#team}}
+#team {
+    background-image: url('{{team}}');
+}
+{{/team}}
+{{#updates}}
+#updates-content {
+    background-image: url('{{updates}}');
+}
+{{/updates}}
+{{#support}}
+#support-content {
+    background-image: url('{{support}}');
+}
+{{/support}}
+{{#error}}
+.error-page::before {
+    background-image: url('{{error}}');
+}
+{{/error}}
 </style>
+{{/backgroundImages}}
+
+{{! Page-specific custom styles }}
+{{#pageStyles}}
+<style>
+{{{pageStyles}}}
+</style>
+{{/pageStyles}}

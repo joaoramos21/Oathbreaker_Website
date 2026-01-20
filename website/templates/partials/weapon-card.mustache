@@ -1,0 +1,24 @@
+<!-- Weapon Card -->
+<div class="weapon-card">
+    <div class="weapon-image-wrapper">
+        <img src="{{weaponCard.image}}" alt="{{weaponCard.name}}" class="weapon-image">
+    </div>
+    <div class="weapon-card-content">
+        <h3 class="weapon-name">{{weaponCard.name}}</h3>
+        <div class="card-divider"></div>
+        <div class="stats">
+            {{#weaponCard.stats}}
+            <div class="stat">
+                <div class="stat-value">{{value}}</div>
+                <div class="stat-label">{{label}}</div>
+            </div>
+            {{/weaponCard.stats}}
+        </div>
+        <div class="card-divider"></div>
+        <p class="weapon-description">{{weaponCard.description}}</p>
+        <div class="arrow-buttons">
+            <button class="arrow-button" id="weapon-prev" aria-label="Previous weapon">←</button>
+            <button class="arrow-button" id="weapon-next" aria-label="Next weapon">→</button>
+        </div>
+    </div>
+</div>

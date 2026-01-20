@@ -1,0 +1,11 @@
+{{! Hero Video Background - Local video with fallback background }}
+{{#heroVideo}}
+<div class="hero-video-container" id="hero-video-container">
+    <div class="hero-video-wrapper">
+        <video id="hero-video-player" autoplay muted loop playsinline disablepictureinpicture>
+            <source src="{{videoSrc}}" type="video/mp4">
+        </video>
+    </div>
+    <div class="hero-video-overlay"></div>
+</div>
+{{/heroVideo}}
