@@ -4075,13 +4075,29 @@ section {
 }
 
 .game-hint {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    color: var(--color-primary);
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-gold-text);
     margin-bottom: 2rem;
-    opacity: 0.8;
+    opacity: 1;
     animation: pulseHint 2s infinite;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-shadow: 0 0 20px rgba(168, 106, 42, 0.6), 0 0 40px rgba(168, 106, 42, 0.3);
+    padding: 1rem 2rem;
+    border: 1px solid rgba(168, 106, 42, 0.4);
+    border-radius: 4px;
+    background: rgba(13, 13, 13, 0.5);
+    transition: all 0.3s ease;
+}
+
+.game-hint:hover {
+    background: rgba(168, 106, 42, 0.15);
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+    text-shadow: 0 0 30px rgba(168, 106, 42, 0.8), 0 0 50px rgba(168, 106, 42, 0.5);
 }
 
 .game-hint .hint-icon {
@@ -4089,8 +4105,14 @@ section {
 }
 
 @keyframes pulseHint {
-    0%, 100% { opacity: 0.6; }
-    50% { opacity: 1; }
+    0%, 100% { 
+        opacity: 0.85;
+        text-shadow: 0 0 20px rgba(168, 106, 42, 0.6), 0 0 40px rgba(168, 106, 42, 0.3);
+    }
+    50% { 
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(214, 179, 106, 0.9), 0 0 60px rgba(168, 106, 42, 0.6);
+    }
 }
 
 /* Mini-game container */
